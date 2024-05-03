@@ -6,5 +6,7 @@
                  name="Project Star*"
                  start-page="overview.md">
 
-    <toc-element topic="overview.md"/>
+    <toc-element topic="overview.md">
+        <toc-element topic="comparison.md"/>
+    </toc-element>
 </instance-profile>
