@@ -9,4 +9,9 @@
     <toc-element topic="overview.md">
         <toc-element topic="comparison.md"/>
     </toc-element>
+    <toc-element topic="projects.md">
+        <toc-element topic="starlight.md"/>
+        <toc-element topic="starlet.md"/>
+        <toc-element topic="starbox.md"/>
+    </toc-element>
 </instance-profile>
