@@ -14,4 +14,22 @@
         <toc-element topic="starlet.md"/>
         <toc-element topic="starbox.md"/>
     </toc-element>
+    <toc-element topic="libraries.md">
+        <toc-element topic="atom.md"/>
+        <toc-element topic="base64.md"/>
+        <toc-element topic="csv.md"/>
+        <toc-element topic="file.md"/>
+        <toc-element topic="goidiomatic.md"/>
+        <toc-element topic="hashlib.md"/>
+        <toc-element topic="http.md"/>
+        <toc-element topic="json.md"/>
+        <toc-element topic="log.md"/>
+        <toc-element topic="math.md"/>
+        <toc-element topic="path.md"/>
+        <toc-element topic="random.md"/>
+        <toc-element topic="re.md"/>
+        <toc-element topic="runtime.md"/>
+        <toc-element topic="string.md"/>
+        <toc-element topic="time.md"/>
+    </toc-element>
 </instance-profile>
