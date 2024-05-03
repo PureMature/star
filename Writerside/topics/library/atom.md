@@ -8,13 +8,13 @@ atom provides atomic operations for integers, floats, and strings.
 
 create a new AtomicInt with an optional initial value
 
-#### Parameters
+#### Parameters {id="new_int-param"}
 
 | name    | type  | description                  |
 |---------|-------|------------------------------|
 | `value` | `int` | initial value, defaults to 0 |
 
-#### Examples
+#### Examples {id="new_int-example"}
 
 **basic**
 
@@ -44,13 +44,13 @@ print(ai.get())
 
 create a new AtomicFloat with an optional initial value
 
-#### Parameters
+#### Parameters {id="new_float-param"}
 
 | name    | type    | description                    |
 |---------|---------|--------------------------------|
 | `value` | `float` | initial value, defaults to 0.0 |
 
-#### Examples
+#### Examples {id="new_float-example"}
 
 **basic**
 
