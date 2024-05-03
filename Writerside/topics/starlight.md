@@ -1,3 +1,0 @@
-# Starlight Enhanced
-
-Start typing here...

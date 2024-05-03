@@ -1,5 +1,7 @@
 # Overview
 
+This section introduces the three projects - Starlight Enhanced, Starlet, and Starbox - highlighting their objectives, motivations for development, and the unique problems each project aims to solve.
+
 Overview articles give background information and provide context to a particular subject.
 Their goal is to explain a concept, not to teach or give instructions.
 
