@@ -14,9 +14,9 @@
     </toc-element>
     <toc-element topic="comparison.md"/>
     <toc-element topic="usage.md">
-        <toc-element topic="usage-starlight.md"/>
-        <toc-element topic="usage-starlet.md"/>
-        <toc-element topic="usage-starbox.md"/>
+        <toc-element topic="pkg-starlight.md"/>
+        <toc-element topic="pkg-starlet.md"/>
+        <toc-element topic="pkg-starbox.md"/>
         <toc-element topic="cli-starlet.md"/>
     </toc-element>
     <toc-element topic="examples.md"/>
