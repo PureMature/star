@@ -1,3 +1,0 @@
-# Starlight
-
-Start typing here...

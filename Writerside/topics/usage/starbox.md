@@ -1,3 +1,0 @@
-# Starbox
-
-Start typing here...

@@ -1,3 +1,0 @@
-# Starlet
-
-Start typing here...
