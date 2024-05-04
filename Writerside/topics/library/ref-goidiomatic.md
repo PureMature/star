@@ -533,7 +533,7 @@ It ensures data consistency and prevents race conditions in concurrent environme
 
 Returns the number of items in the shared dictionary.
 
-##### Examples
+##### Examples {id="len-example"}
 
 **Basic**
 
@@ -551,13 +551,13 @@ print(sd.len())
 
 Calls the given function with the shared dictionary as its argument. The function must be callable.
 
-##### Parameters
+##### Parameters {id="perform-param"}
 
 | name | type       | description                                                                                                   |
 |------|------------|---------------------------------------------------------------------------------------------------------------|
 | `fn` | `callable` | The function to be called with the shared dictionary, and accepts the shared dictionary as its only argument. |
 
-##### Examples
+##### Examples {id="perform-example"}
 
 **Basic**
 
@@ -576,7 +576,7 @@ print(sd)
 
 Returns a shadow-clone of the shared dictionary. Modifications to the clone do not affect the original shared dictionary.
 
-##### Examples
+##### Examples {id="to_dict-example"}
 
 **Clone and Modify**
 
@@ -597,7 +597,7 @@ print(sd_clone)
 
 Serializes the shared dictionary to a JSON string.
 
-##### Examples
+##### Examples {id="to_json-example"}
 
 **Serialize**
 
@@ -615,13 +615,13 @@ print(json_str)
 
 Deserializes a JSON string into the shared dictionary, updating it with the key-value pairs decoded from the string.
 
-##### Parameters
+##### Parameters {id="from_json-param"}
 
 | name       | type     | description                                                          |
 |------------|----------|----------------------------------------------------------------------|
 | `json_str` | `string` | The JSON string to deserialize and merge into the shared dictionary. |
 
-##### Examples
+##### Examples {id="from_json-example"}
 
 **Deserialize**
 

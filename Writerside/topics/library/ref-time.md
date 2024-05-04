@@ -88,7 +88,7 @@ textual representation of time formatted according to the provided
 layout string: 01/02 03:04:05PM '06 -0700 (January 2, 15:04:05, 2006,
 in time zone seven hours west of GMT)
 
-##### Examples
+##### Examples {id="format-example"}
 
 **ISO timestamp**
 
