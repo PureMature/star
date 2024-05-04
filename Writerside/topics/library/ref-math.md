@@ -64,7 +64,7 @@ Return the absolute value of x.
 
 Return the floor of x, the largest integer less than or equal to x.
 
-#### Examples
+#### Examples {id="floor-example"}
 
 **basic**
 
@@ -99,7 +99,7 @@ Returns the floating-point remainder of x/y. The magnitude of the result is less
 
 Returns x**y, the base-x exponential of y.
 
-#### Examples
+#### Examples {id="pow-example"}
 
 **basic**
 

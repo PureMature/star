@@ -8,7 +8,7 @@ csv parses and writes comma-separated values files (csv).
 
 read all rows from a source string, returning a list of string lists
 
-#### Parameters
+#### Parameters {id="read_all-param"}
 
 | name                 | type     | description                                                                                                                                                                                                                                                                                                                                                                                                             |
 |----------------------|----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -21,7 +21,7 @@ read all rows from a source string, returning a list of string lists
 | `skip`               | `int`    | Number of rows to skip before starting to read, omitting from returned rows.                                                                                                                                                                                                                                                                                                                                            |
 | `limit`              | `int`    | Maximum number of rows to read, stops reading when this limit is reached. If limit is 0, all rows after skip are read.                                                                                                                                                                                                                                                                                                  |
 
-#### Examples
+#### Examples {id="read_all-example"}
 
 **basic**
 
@@ -59,14 +59,14 @@ print(data)
 
 write all rows from source to a csv-encoded string
 
-#### Parameters
+#### Parameters {id="write_all-param"}
 
 | name     | type         | description                                                                                                                                                     |
 |----------|--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `source` | `[][]string` | array of arrays of strings to write to csv                                                                                                                      |
 | `comma`  | `string`     | comma is the field delimiter, defaults to "," (a comma). comma must be a valid character and must not be \r, \n, or the Unicode replacement character (0xFFFD). |
 
-#### Examples
+#### Examples {id="write_all-example"}
 
 **basic**
 
@@ -89,7 +89,7 @@ print(csv_str)
 
 write a list of dictionaries to a csv string based on the provided header
 
-#### Parameters
+#### Parameters {id="write_dict-param"}
 
 | name     | type       | description                                                                                                                                                     |
 |----------|------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -97,7 +97,7 @@ write a list of dictionaries to a csv string based on the provided header
 | `header` | `[]string` | array of strings representing the header (column names) of the csv                                                                                              |
 | `comma`  | `string`   | comma is the field delimiter, defaults to "," (a comma). comma must be a valid character and must not be \r, \n, or the Unicode replacement character (0xFFFD). |
 
-#### Examples
+#### Examples {id="write_dict-example"}
 
 **basic**
 

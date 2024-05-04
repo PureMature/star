@@ -8,7 +8,7 @@
 
 Returns the uptime of the current process in `time.duration`.
 
-#### Examples
+#### Examples {id="uptime-example"}
 
 **basic**
 
@@ -24,7 +24,7 @@ print(uptime())
 
 Returns the value of the environment variable key as a string if it exists, or default if it doesn't.
 
-#### Examples
+#### Examples {id="getenv-example"}
 
 **basic**
 
@@ -40,7 +40,7 @@ print(getenv("PATH"))
 
 Sets the value of the environment variable named by the key, returning an error if any.
 
-#### Examples
+#### Examples {id="putenv-example"}
 
 **basic**
 
@@ -56,7 +56,7 @@ putenv("STARLET_TEST", 123456)
 Sets the value of the environment variable named by the key, returning an error if any.
 Alias of `putenv`.
 
-#### Examples
+#### Examples {id="setenv-example"}
 
 **basic**
 
@@ -71,7 +71,7 @@ setenv("STARLET_TEST", "ABC")
 
 Unsets a single environment variable.
 
-#### Examples
+#### Examples {id="unsetenv-example"}
 
 **basic**
 

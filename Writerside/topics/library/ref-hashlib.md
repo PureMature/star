@@ -8,7 +8,7 @@
 
 Returns an MD5 hash for a string or bytes.
 
-#### Examples
+#### Examples {id="md5-example"}
 
 **Basic**
 
@@ -25,7 +25,7 @@ print(sum)
 
 Returns a SHA-1 hash for a string or bytes.
 
-#### Examples
+#### Examples {id="sha1-example"}
 
 **Basic**
 
@@ -42,7 +42,7 @@ print(sum)
 
 Returns an SHA-256 hash for a string or bytes.
 
-#### Examples
+#### Examples {id="sha256-example"}
 
 **Basic**
 
@@ -59,7 +59,7 @@ print(sum)
 
 Returns an SHA-512 hash for a string or bytes.
 
-#### Examples
+#### Examples {id="sha512-example"}
 
 **Basic**
 

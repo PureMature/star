@@ -8,7 +8,7 @@
 
 Perform an HTTP GET request, returning a response.
 
-#### Parameters
+#### Parameters {id="get-param"}
 
 | name              | type     | description                                                                                                  |
 |-------------------|----------|--------------------------------------------------------------------------------------------------------------|
@@ -23,7 +23,7 @@ Perform an HTTP GET request, returning a response.
 
 Perform an HTTP PUT request, returning a response.
 
-#### Parameters
+#### Parameters {id="put-param"}
 
 | name              | type     | description                                                                                                                                                   |
 |-------------------|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -42,7 +42,7 @@ Perform an HTTP PUT request, returning a response.
 
 Perform an HTTP POST request, returning a response.
 
-#### Parameters
+#### Parameters {id="post-param"}
 
 | name              | type     | description                                                                                                                                                   |
 |-------------------|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -61,7 +61,7 @@ Perform an HTTP POST request, returning a response.
 
 Perform an HTTP POST request with form data, returning a response.
 
-#### Parameters
+#### Parameters {id="postForm-param"}
 
 | name              | type     | description                                                                                                                                                   |
 |-------------------|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -78,7 +78,7 @@ Perform an HTTP POST request with form data, returning a response.
 
 Perform an HTTP DELETE request, returning a response.
 
-#### Parameters
+#### Parameters {id="delete-param"}
 
 | name              | type     | description                                                                                                                                                   |
 |-------------------|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -97,7 +97,7 @@ Perform an HTTP DELETE request, returning a response.
 
 Perform an HTTP PATCH request, returning a response.
 
-#### Parameters
+#### Parameters {id="patch-param"}
 
 | name              | type     | description                                                                                                                                                   |
 |-------------------|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -116,7 +116,7 @@ Perform an HTTP PATCH request, returning a response.
 
 Perform an HTTP OPTIONS request, returning a response.
 
-#### Parameters
+#### Parameters {id="options-param"}
 
 | name              | type     | description                                                                                                                                                   |
 |-------------------|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -135,7 +135,7 @@ Perform an HTTP OPTIONS request, returning a response.
 
 Set the global timeout for all HTTP requests.
 
-#### Parameters
+#### Parameters {id="set_timeout-param"}
 
 | name      | type    | description                                                                                                                  |
 |-----------|---------|------------------------------------------------------------------------------------------------------------------------------|

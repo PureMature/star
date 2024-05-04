@@ -8,14 +8,14 @@
 
 return the base64 encoding of src
 
-#### Parameters
+#### Parameters {id="encode-param"}
 
 | name       | type     | description                                                                                     |
 |------------|----------|-------------------------------------------------------------------------------------------------|
 | `src`      | `string` | source string to encode to base64                                                               |
 | `encoding` | `string` | optional. string to set encoding dialect. allowed values are: standard,standard_raw,url,url_raw |
 
-#### Examples
+#### Examples {id="encode-example"}
 
 **basic**
 
@@ -32,14 +32,14 @@ print(encoded)
 
 parse base64 input, giving back the plain string representation
 
-#### Parameters
+#### Parameters {id="decode-param"}
 
 | name       | type     | description                                                                                     |
 |------------|----------|-------------------------------------------------------------------------------------------------|
 | `src`      | `string` | source string of base64-encoded text                                                            |
 | `encoding` | `string` | optional. string to set decoding dialect. allowed values are: standard,standard_raw,url,url_raw |
 
-#### Examples
+#### Examples {id="decode-example"}
 
 **basic**
 

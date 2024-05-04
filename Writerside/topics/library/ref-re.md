@@ -9,7 +9,7 @@
 Compile a regular expression pattern into a regular expression object, which
 can be used for matching using its match(), search() and other methods.
 
-#### Parameters
+#### Parameters {id="compile-param"}
 
 | name      | type     | description                       |
 |-----------|----------|-----------------------------------|
@@ -22,7 +22,7 @@ produces a match, and return a corresponding match object. Return None if no pos
 the string matches the pattern; note that this is different from finding a zero-length match
 at some point in the string.
 
-#### Parameters
+#### Parameters {id="search-param"}
 
 | name      | type     | description                                                       |
 |-----------|----------|-------------------------------------------------------------------|
@@ -38,7 +38,7 @@ If one or more groups are present in the pattern, return a list of groups;
 this will be a list of tuples if the pattern has more than one group.
 Empty matches are included in the result.
 
-#### Parameters
+#### Parameters {id="findall-param"}
 
 | name      | type     | description                                                       |
 |-----------|----------|-------------------------------------------------------------------|
@@ -53,7 +53,7 @@ then the text of all groups in the pattern are also returned as part of the resu
 If maxsplit is nonzero, at most maxsplit splits occur, and the remainder of the string
 is returned as the final element of the list.
 
-#### Parameters
+#### Parameters {id="split-param"}
 
 | name       | type     | description                                                       |
 |------------|----------|-------------------------------------------------------------------|
@@ -69,7 +69,7 @@ in string by the replacement repl. If the pattern isn’t found, string is retur
 repl can be a string or a function; if it is a string, any backslash escapes in it are processed.
 That is, `\n` is converted to a single newline character, `\r` is converted to a carriage return, and so forth.
 
-#### Parameters
+#### Parameters {id="sub-param"}
 
 | name      | type     | description                                                         |
 |-----------|----------|---------------------------------------------------------------------|
@@ -84,7 +84,7 @@ That is, `\n` is converted to a single newline character, `\r` is converted to a
 If zero or more characters at the beginning of string match the regular expression pattern,
 return a corresponding match string tuple. Return None if the string does not match the pattern
 
-#### Parameters
+#### Parameters {id="match-param"}
 
 | name      | type     | description                       |
 |-----------|----------|-----------------------------------|

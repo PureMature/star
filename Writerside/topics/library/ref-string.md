@@ -8,13 +8,13 @@
 
 Returns the length of the object; for string, it returns the number of Unicode code points, instead of bytes like `len()`.
 
-#### Parameters
+#### Parameters {id="length-param"}
 
 | name  | type     | description                                 |
 |-------|----------|---------------------------------------------|
 | `obj` | `string` | The object whose length is to be calculated |
 
-#### Examples
+#### Examples {id="length-example"}
 
 **String**
 
@@ -41,13 +41,13 @@ print(length([1, 2, 3]), length(set([1, 2])), length({1: 2}))
 
 Returns the reversed string of the given value.
 
-#### Parameters
+#### Parameters {id="reverse-param"}
 
 | name  | type     | description                     |
 |-------|----------|---------------------------------|
 | `str` | `string` | A string that is to be reversed |
 
-#### Examples
+#### Examples {id="reverse-example"}
 
 **Basic**
 
@@ -64,13 +64,13 @@ print(reverse(s))
 
 Converts the characters "&", "<", ">", '"' and "'" in string to their corresponding HTML entities.
 
-#### Parameters
+#### Parameters {id="escape-param"}
 
 | name  | type     | description                          |
 |-------|----------|--------------------------------------|
 | `str` | `string` | A string which is to be HTML escaped |
 
-#### Examples
+#### Examples {id="escape-example"}
 
 **Basic**
 
@@ -87,13 +87,13 @@ print(escape(s))
 
 Converts the HTML entities in a string back to their corresponding characters.
 
-#### Parameters
+#### Parameters {id="unescape-param"}
 
 | name  | type     | description           |
 |-------|----------|-----------------------|
 | `str` | `string` | A HTML escaped string |
 
-#### Examples
+#### Examples {id="unescape-example"}
 
 **Basic**
 
@@ -110,13 +110,13 @@ print(unescape(s))
 
 Returns a shell-escaped version of the string str. This returns a string that can safely be used as one token in a shell command line.
 
-#### Parameters
+#### Parameters {id="quote-param"}
 
 | name  | type     | description                    |
 |-------|----------|--------------------------------|
 | `str` | `string` | A string which is to be quoted |
 
-#### Examples
+#### Examples {id="quote-example"}
 
 **Basic**
 
@@ -133,13 +133,13 @@ print(quote(s))
 
 Returns a shell-unescaped version of the string str. This returns a string that was used as one token in a shell command line.
 
-#### Parameters
+#### Parameters {id="unquote-param"}
 
 | name  | type     | description                      |
 |-------|----------|----------------------------------|
 | `str` | `string` | A string which is to be unquoted |
 
-#### Examples
+#### Examples {id="unquote-example"}
 
 **Basic**
 

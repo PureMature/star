@@ -78,13 +78,13 @@ print(af.get())
 
 create a new AtomicString with an optional initial value
 
-#### Parameters
+#### Parameters {id="new_string-param"}
 
 | name    | type     | description                                |
 |---------|----------|--------------------------------------------|
 | `value` | `string` | initial value, defaults to an empty string |
 
-#### Examples
+#### Examples {id="new_string-example"}
 
 **basic**
 

@@ -8,7 +8,7 @@
 
 Logs a message at the debug log level.
 
-#### Parameters
+#### Parameters {id="debug-param"}
 
 | name   | type       | description                                                                                   |
 |--------|------------|-----------------------------------------------------------------------------------------------|
@@ -16,7 +16,7 @@ Logs a message at the debug log level.
 | `misc` | `*args`    | Additional message arguments will be concatenated to the message string separated by a space. |
 | `kv`   | `**kwargs` | Key-value pairs to provide additional debug information.                                      |
 
-#### Examples
+#### Examples {id="debug-example"}
 
 **basic**
 
@@ -32,7 +32,7 @@ debug("Fetching data at", "21:40", retry_attempt=1)
 
 Logs a message at the info log level.
 
-#### Parameters
+#### Parameters {id="info-param"}
 
 | name   | type       | description                                                                                   |
 |--------|------------|-----------------------------------------------------------------------------------------------|
@@ -40,7 +40,7 @@ Logs a message at the info log level.
 | `misc` | `*args`    | Additional message arguments will be concatenated to the message string separated by a space. |
 | `kv`   | `**kwargs` | Key-value pairs to provide additional information.                                            |
 
-#### Examples
+#### Examples {id="info-example"}
 
 **basic**
 
@@ -55,7 +55,7 @@ info("Data fetched", response_time=42)
 
 Logs a message at the warn log level.
 
-#### Parameters
+#### Parameters {id="warn-param"}
 
 | name   | type       | description                                                                                   |
 |--------|------------|-----------------------------------------------------------------------------------------------|
@@ -63,7 +63,7 @@ Logs a message at the warn log level.
 | `misc` | `*args`    | Additional message arguments will be concatenated to the message string separated by a space. |
 | `kv`   | `**kwargs` | Key-value pairs to provide additional warning information.                                    |
 
-#### Examples
+#### Examples {id="warn-example"}
 
 **basic**
 
@@ -78,7 +78,7 @@ warn("Fetching data took longer than expected", response_time=123)
 
 Logs a message at the error log level and returns an error.
 
-#### Parameters
+#### Parameters {id="error-param"}
 
 | name   | type       | description                                                                                   |
 |--------|------------|-----------------------------------------------------------------------------------------------|
@@ -86,7 +86,7 @@ Logs a message at the error log level and returns an error.
 | `misc` | `*args`    | Additional message arguments will be concatenated to the message string separated by a space. |
 | `kv`   | `**kwargs` | Key-value pairs to provide additional error information.                                      |
 
-#### Examples
+#### Examples {id="error-example"}
 
 **basic**
 
@@ -101,7 +101,7 @@ error("Failed to fetch data", response_time=240)
 
 Logs a message at the error log level, returns a `fail(msg)` to halt program execution.
 
-#### Parameters
+#### Parameters {id="fatal-param"}
 
 | name   | type       | description                                                                                   |
 |--------|------------|-----------------------------------------------------------------------------------------------|
@@ -109,7 +109,7 @@ Logs a message at the error log level, returns a `fail(msg)` to halt program exe
 | `misc` | `*args`    | Additional message arguments will be concatenated to the message string separated by a space. |
 | `kv`   | `**kwargs` | Key-value pairs to provide additional fatal error information.                                |
 
-#### Examples
+#### Examples {id="fatal-example"}
 
 **basic**
 

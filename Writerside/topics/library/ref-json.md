@@ -17,7 +17,7 @@ The encode function accepts one required positional argument, which it converts 
 - a Starlark HasAttrs (e.g. struct) is encoded as a JSON object.
   It an application-defined type matches more than one the cases describe above, (e.g. it implements both `Iterable` and `HasFields`), the first case takes precedence. Encoding any other value yields an error.
 
-#### Examples
+#### Examples {id="encode-example"}
 
 **Basic**
 
@@ -37,7 +37,7 @@ The decode function has one required positional parameter, a JSON string. It ret
 - JSON arrays are parsed as new unfrozen Starlark lists.
   If x is not a valid JSON string, the behavior depends on the "default" parameter: if present, Decode returns its value; otherwise, Decode fails.
 
-#### Examples
+#### Examples {id="decode-example"}
 
 **Basic**
 
@@ -54,7 +54,7 @@ print(decode('{"a":10,"b":20}'))
 The indent function pretty-prints a valid JSON encoding, and returns a string containing the indented form.
 It accepts one required positional parameter, the JSON string, and two optional keyword-only string parameters, prefix and indent, that specify a prefix of each new line, and the unit of indentation.
 
-#### Examples
+#### Examples {id="indent-example"}
 
 **Basic**
 
@@ -75,7 +75,7 @@ print(indent('{"a":10,"b":20}', indent="  "))
 The dumps function converts a Starlark value to a JSON string, and returns it.
 It accepts one required positional parameter, the Starlark value, and one optional integer parameter, indent, that specifies the unit of indentation.
 
-#### Examples
+#### Examples {id="dumps-example"}
 
 **Basic**
 

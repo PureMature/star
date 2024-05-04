@@ -8,7 +8,7 @@
 
 Returns the length of the object, for string it returns the number of Unicode code points, instead of bytes like `len()`.
 
-#### Examples
+#### Examples {id="length-example"}
 
 **String**
 
@@ -35,7 +35,7 @@ print(length([1, 2, 3]), length(set([1, 2])), length({1: 2}))
 
 Returns the sum of `start` and the items of an iterable from left to right. The iterable's items and the `start` value are normally numbers.
 
-#### Examples
+#### Examples {id="sum-example"}
 
 **Basic**
 
@@ -61,13 +61,13 @@ print(sum([1, 2, 3], 10))
 
 Returns an iterable with distinct elements from the given iterable, i.e., without duplicates. For a list and custom types, it returns a new list with distinct elements. For a tuple, it returns a new tuple with distinct elements. For a dict, it returns the keys in a list. For a set, it just returns the original set.
 
-#### Parameters
+#### Parameters {id="distinct-param"}
 
 | name       | type       | description                                    |
 |------------|------------|------------------------------------------------|
 | `iterable` | `iterable` | The iterable to process for distinct elements. |
 
-#### Examples
+#### Examples {id="distinct-example"}
 
 **List**
 
@@ -113,7 +113,7 @@ print(distinct(set([1, 2, 3, 3])))
 
 Convert an integer number to a lowercase hexadecimal string prefixed with `0x`.
 
-#### Examples
+#### Examples {id="hex-example"}
 
 **Basic**
 
@@ -139,7 +139,7 @@ print(hex(-42))
 
 Convert an integer number to an octal string prefixed with `0o`.
 
-#### Examples
+#### Examples {id="oct-example"}
 
 **Basic**
 
@@ -165,7 +165,7 @@ print(oct(-56))
 
 Convert an integer number to a binary string prefixed with `0b`.
 
-#### Examples
+#### Examples {id="bin-example"}
 
 **Basic**
 
@@ -194,7 +194,7 @@ If you want to make the hex string easier to read, you can specify a single char
 By default, this separator will be included between each byte.
 A second optional bytes_per_sep parameter controls the spacing. Positive values calculate the separator position from the right, negative values from the left.
 
-#### Parameters
+#### Parameters {id="bytes_hex-param"}
 
 | name            | type     | description                        |
 |-----------------|----------|------------------------------------|
@@ -202,7 +202,7 @@ A second optional bytes_per_sep parameter controls the spacing. Positive values 
 | `sep`           | `string` | The separator to use.              |
 | `bytes_per_sep` | `int`    | The number of bytes per separator. |
 
-#### Examples
+#### Examples {id="bytes_hex-example"}
 
 **Basic**
 
@@ -238,7 +238,7 @@ print(bytes_hex(b"hello", sep=":", bytes_per_sep=2))
 
 Sleeps for the given number of seconds.
 
-#### Examples
+#### Examples {id="sleep-example"}
 
 **Basic**
 
@@ -253,7 +253,7 @@ sleep(1)
 
 Exits the program with the given exit code.
 
-#### Examples
+#### Examples {id="exit-example"}
 
 **Default**
 
@@ -277,7 +277,7 @@ exit(1)
 
 Alias for `exit()`.
 
-#### Examples
+#### Examples {id="quit-example"}
 
 **Default**
 
@@ -303,14 +303,14 @@ Returns the module with the given name and keyword arguments.
 The main difference between the `module` and the `struct` is that the string representation of the `module` does not enumerate its fields.
 The module can't be compared with `==` and `!=`, but the `struct` can.
 
-#### Parameters
+#### Parameters {id="module-param"}
 
 | name   | type       | description                            |
 |--------|------------|----------------------------------------|
 | `name` | `string`   | The name of the module to return.      |
 | `kv`   | `**kwargs` | Key-value pairs to provide attributes. |
 
-#### Examples
+#### Examples {id="module-example"}
 
 **Basic**
 
@@ -327,13 +327,13 @@ print(os)
 
 Returns a new struct with the given keyword arguments.
 
-#### Parameters
+#### Parameters {id="struct-param"}
 
 | name | type       | description                            |
 |------|------------|----------------------------------------|
 | `kv` | `**kwargs` | Key-value pairs to provide attributes. |
 
-#### Examples
+#### Examples {id="struct-example"}
 
 **Basic**
 
@@ -351,14 +351,14 @@ print(person)
 Returns a new struct with the given name as constructor and keyword arguments.
 Comparing two structs with `==` and `!=` will compare their constructors first and then their fields.
 
-#### Parameters
+#### Parameters {id="make_struct-param"}
 
 | name   | type       | description                            |
 |--------|------------|----------------------------------------|
 | `name` | `string`   | The name to use as constructor.        |
 | `kv`   | `**kwargs` | Key-value pairs to provide attributes. |
 
-#### Examples
+#### Examples {id="make_struct-example"}
 
 **Basic**
 
@@ -377,7 +377,7 @@ Creates a new instance of a thread-safe, mutable shared dictionary.
 This allows for concurrent access and modification by multiple Starlark threads, ensuring data consistency and preventing race conditions.
 The function initializes a SharedDict with default settings.
 
-#### Examples
+#### Examples {id="shared_dict-example"}
 
 **Basic**
 
@@ -395,14 +395,14 @@ print(sd)
 Creates a customized shared dictionary with an optional name and initial data.
 The name parameter allows for more descriptive representations and debugging, while the data parameter lets you initialize the shared dictionary with pre-existing key-value pairs.
 
-#### Parameters
+#### Parameters {id="make_shared_dict-param"}
 
 | name   | type     | description                                                                                                                              |
 |--------|----------|------------------------------------------------------------------------------------------------------------------------------------------|
 | `name` | `string` | An optional name for the shared dictionary. Defaults to an empty string, which results in the default name "shared_dict".                |
 | `data` | `dict`   | An optional Starlark dictionary to initialize the shared dictionary with. Defaults to None, which results in an empty shared dictionary. |
 
-#### Examples
+#### Examples {id="make_shared_dict-example"}
 
 **Named Shared Dict**
 
@@ -432,14 +432,14 @@ print(sd)
 Works like the standard `print()` function but prints the given arguments to `stderr` instead of `Print` handler defined in Go.
 This is useful for logging errors or important warnings that should be separated from standard output.
 
-#### Parameters
+#### Parameters {id="eprint-param"}
 
 | name   | type     | description                                                             |
 |--------|----------|-------------------------------------------------------------------------|
 | `args` | `*args`  | The values to be printed.                                               |
 | `sep`  | `string` | An optional separator between values. Defaults to a single space (" "). |
 
-#### Examples
+#### Examples {id="eprint-example"}
 
 **Basic**
 
@@ -466,14 +466,14 @@ Works like the standard `print()` function but formats the given arguments in pr
 If an argument cannot be converted to JSON, it falls back to converting the value to a string.
 This is particularly useful for printing complex data structures in a human-readable format.
 
-#### Parameters
+#### Parameters {id="pprint-param"}
 
 | name   | type     | description                                                                                                    |
 |--------|----------|----------------------------------------------------------------------------------------------------------------|
 | `args` | `*args`  | The values to be printed. These can be any Starlark values, including lists, dictionaries, and custom structs. |
 | `sep`  | `string` | An optional separator between values. Defaults to a single space (" ").                                        |
 
-#### Examples
+#### Examples {id="pprint-example"}
 
 **Basic**
 

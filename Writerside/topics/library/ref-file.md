@@ -8,13 +8,13 @@
 
 Removes the Byte Order Mark (BOM) from a byte literal string or bytes.
 
-#### Parameters
+#### Parameters {id="trim_bom-param"}
 
 | name | type    | description |
 |------|---------|-------------|
 | `rd` | `string | byes`       |
 
-#### Examples
+#### Examples {id="trim_bom-example"}
 
 **basic**
 
@@ -31,13 +31,13 @@ print(trim_bom(s))
 
 Counts the total lines in a file located at the provided path.
 
-#### Parameters
+#### Parameters {id="count_lines-param"}
 
 | name   | type     | description                                        |
 |--------|----------|----------------------------------------------------|
 | `name` | `string` | The path of the file whose lines are to be counted |
 
-#### Examples
+#### Examples {id="count_lines-example"}
 
 **basic**
 
@@ -54,14 +54,14 @@ print(count_lines(name))
 
 Returns the first 'n' lines of a file.
 
-#### Parameters
+#### Parameters {id="head_lines-param"}
 
 | name   | type     | description                                     |
 |--------|----------|-------------------------------------------------|
 | `name` | `string` | The path of the file                            |
 | `n`    | `int`    | The number of lines from the top to be returned |
 
-#### Examples
+#### Examples {id="head_lines-example"}
 
 **basic**
 
@@ -77,14 +77,14 @@ print(head_lines('path/to/file.txt', 10))
 
 Returns the last 'n' lines of a file.
 
-#### Parameters
+#### Parameters {id="tail_lines-param"}
 
 | name   | type     | description                                        |
 |--------|----------|----------------------------------------------------|
 | `name` | `string` | The path of the file                               |
 | `n`    | `int`    | The number of lines from the bottom to be returned |
 
-#### Examples
+#### Examples {id="tail_lines-example"}
 
 **basic**
 
@@ -100,13 +100,13 @@ print(tail_lines('path/to/file.txt', 10))
 
 Reads a file and returns its contents as bytes.
 
-#### Parameters
+#### Parameters {id="read_bytes-param"}
 
 | name   | type     | description                     |
 |--------|----------|---------------------------------|
 | `name` | `string` | The path of the file to be read |
 
-#### Examples
+#### Examples {id="read_bytes-example"}
 
 **basic**
 
@@ -122,13 +122,13 @@ print(read_bytes('path/to/file.txt'))
 
 Reads a file and returns its contents as string.
 
-#### Parameters
+#### Parameters {id="read_string-param"}
 
 | name   | type     | description                     |
 |--------|----------|---------------------------------|
 | `name` | `string` | The path of the file to be read |
 
-#### Examples
+#### Examples {id="read_string-example"}
 
 **basic**
 
@@ -144,13 +144,13 @@ print(read_string('path/to/file.txt'))
 
 Reads a file and returns its contents as a list of lines.
 
-#### Parameters
+#### Parameters {id="read_lines-param"}
 
 | name   | type     | description                     |
 |--------|----------|---------------------------------|
 | `name` | `string` | The path of the file to be read |
 
-#### Examples
+#### Examples {id="read_lines-example"}
 
 **basic**
 
@@ -166,14 +166,14 @@ print(read_lines('path/to/file.txt'))
 
 Writes/overwrites bytes or a byte literal string to a file. If the file isn't present, a new file would be created.
 
-#### Parameters
+#### Parameters {id="write_bytes-param"}
 
 | name   | type     | description                                                |
 |--------|----------|------------------------------------------------------------|
 | `name` | `string` | The path of the file to be written to                      |
 | `data` | `string` | The byte literal string or bytes to be written to the file |
 
-#### Examples
+#### Examples {id="write_bytes-example"}
 
 **basic**
 
@@ -190,14 +190,14 @@ write_bytes(name, data)
 
 Writes/overwrites a string to a file. If the file isn't present, a new file would be created.
 
-#### Parameters
+#### Parameters {id="write_string-param"}
 
 | name   | type     | description                           |
 |--------|----------|---------------------------------------|
 | `name` | `string` | The path of the file to be written to |
 | `data` | `string` | The string to be written to the file  |
 
-#### Examples
+#### Examples {id="write_string-example"}
 
 **basic**
 
@@ -212,14 +212,14 @@ write_string('new_file.txt', 'Hello, This is a new file.')
 
 Writes/overwrites a list, tuple or set of lines to a file. If the file isn't present, a new file would be created.
 
-#### Parameters
+#### Parameters {id="write_lines-param"}
 
 | name   | type     | description                           |
 |--------|----------|---------------------------------------|
 | `name` | `string` | The path of the file to be written to |
 | `data` | `list    | set                                   |
 
-#### Examples
+#### Examples {id="write_lines-example"}
 
 **List**
 
@@ -235,14 +235,14 @@ write_lines('new_file.txt', lines)
 
 Appends bytes or a byte literal string to a file. If the file isn't present, a new file would be created.
 
-#### Parameters
+#### Parameters {id="append_bytes-param"}
 
 | name   | type     | description                                                 |
 |--------|----------|-------------------------------------------------------------|
 | `name` | `string` | The path of the file to be written to                       |
 | `data` | `string` | The byte literal string or bytes to be appended to the file |
 
-#### Examples
+#### Examples {id="append_bytes-example"}
 
 **basic**
 
@@ -257,14 +257,14 @@ append_bytes('existing_file.txt', b'Hello, This is appended data.')
 
 Appends a string to a file. If the file isn't present, a new file would be created.
 
-#### Parameters
+#### Parameters {id="append_string-param"}
 
 | name   | type     | description                           |
 |--------|----------|---------------------------------------|
 | `name` | `string` | The path of the file to be written to |
 | `data` | `string` | The string to be appended to the file |
 
-#### Examples
+#### Examples {id="append_string-example"}
 
 **basic**
 
@@ -279,14 +279,14 @@ append_string('existing_file.txt', 'Hello, This is appended data.')
 
 Appends a list, tuple or set of lines to a file. If the file isn't present, a new file would be created.
 
-#### Parameters
+#### Parameters {id="append_lines-param"}
 
 | name   | type     | description                           |
 |--------|----------|---------------------------------------|
 | `name` | `string` | The path of the file to be written to |
 | `data` | `list    | set                                   |
 
-#### Examples
+#### Examples {id="append_lines-example"}
 
 **basic**
 
@@ -301,14 +301,14 @@ append_lines('existing_file.txt', ['This is line1', 'This is line2', 'This is li
 
 Returns a FileStat object representing information about the given file or directory.
 
-#### Parameters
+#### Parameters {id="stat-param"}
 
 | name     | type     | description                           |
 |----------|----------|---------------------------------------|
 | `name`   | `string` | The path of the file or directory.    |
 | `follow` | `bool`   | If true, symbolic links are followed. |
 
-#### Examples
+#### Examples {id="stat-example"}
 
 **file information**
 
@@ -337,7 +337,7 @@ print(info.name, info.size, info.type)
 Copies a file from source to destination, and returns the destination file path.
 If the destination exists and overwrite is set to False, an error is returned. If the destination is a directory, the file is copied into that directory with its original filename. Symbolic links are followed. Mode, access, and modification times are preserved.
 
-#### Parameters
+#### Parameters {id="copyfile-param"}
 
 | name        | type     | description                                                                       |
 |-------------|----------|-----------------------------------------------------------------------------------|
@@ -345,7 +345,7 @@ If the destination exists and overwrite is set to False, an error is returned. I
 | `dst`       | `string` | The path of the destination file or directory. The parent directory must exist.   |
 | `overwrite` | `bool`   | If true, allows overwriting the destination file if it exists. Defaults to False. |
 
-#### Examples
+#### Examples {id="copyfile-example"}
 
 **basic copy**
 

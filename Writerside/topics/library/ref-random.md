@@ -8,13 +8,13 @@
 
 Generate a random byte string containing n number of bytes.
 
-#### Parameters
+#### Parameters {id="randbytes-param"}
 
 | name | type  | description                                                               |
 |------|-------|---------------------------------------------------------------------------|
 | `n`  | `int` | If n bytes is non-positive or not supplied, a reasonable default is used. |
 
-#### Examples
+#### Examples {id="randbytes-example"}
 
 **basic**
 
@@ -31,14 +31,14 @@ print(b)
 
 Generate a random string containing n number of unicode characters from the given unicode string.
 
-#### Parameters
+#### Parameters {id="randstr-param"}
 
 | name    | type     | description                                                                                   |
 |---------|----------|-----------------------------------------------------------------------------------------------|
 | `chars` | `string` | The characters to choose from.                                                                |
 | `n`     | `int`    | The length of the string. If n is non-positive or not supplied, a reasonable default is used. |
 
-#### Examples
+#### Examples {id="randstr-example"}
 
 **basic**
 
@@ -55,14 +55,14 @@ print(s)
 
 Generate a random base32 string containing n number of bytes with optional separator dash for every sep characters.
 
-#### Parameters
+#### Parameters {id="randb32-param"}
 
 | name  | type  | description                                                                                                   |
 |-------|-------|---------------------------------------------------------------------------------------------------------------|
 | `n`   | `int` | The number of bytes to generate. If n is non-positive or not supplied, a reasonable default is used.          |
 | `sep` | `int` | The number of characters to separate with a dash, if it's non-positive or not supplied, no separator is used. |
 
-#### Examples
+#### Examples {id="randb32-example"}
 
 **basic**
 
@@ -79,14 +79,14 @@ print(s)
 
 Return a random integer N such that a <= N <= b.
 
-#### Parameters
+#### Parameters {id="randint-param"}
 
 | name | type  | description                   |
 |------|-------|-------------------------------|
 | `a`  | `int` | The lower bound of the range. |
 | `b`  | `int` | The upper bound of the range. |
 
-#### Examples
+#### Examples {id="randint-example"}
 
 **basic**
 
@@ -103,7 +103,7 @@ print(n)
 
 Return a random floating point number in the range 0.0 <= X < 1.0.
 
-#### Examples
+#### Examples {id="random-example"}
 
 **basic**
 
@@ -121,14 +121,14 @@ print(n)
 Return a random floating point number N such that a <= N <= b for a <= b and b <= N <= a for b < a.
 The end-point value b may or may not be included in the range depending on floating-point rounding in the equation a + (b-a) * random().
 
-#### Parameters
+#### Parameters {id="uniform-param"}
 
 | name | type    | description                   |
 |------|---------|-------------------------------|
 | `a`  | `float` | The lower bound of the range. |
 | `b`  | `float` | The upper bound of the range. |
 
-#### Examples
+#### Examples {id="uniform-example"}
 
 **basic**
 
@@ -145,7 +145,7 @@ print(n)
 
 Generate a random UUID (RFC 4122 version 4).
 
-#### Examples
+#### Examples {id="uuid-example"}
 
 **basic**
 
@@ -162,13 +162,13 @@ print(u)
 
 Return a random element from the non-empty sequence seq.
 
-#### Parameters
+#### Parameters {id="choice-param"}
 
 | name  | type   | description           |
 |-------|--------|-----------------------|
 | `seq` | `list` | A non-empty sequence. |
 
-#### Examples
+#### Examples {id="choice-example"}
 
 **basic**
 
@@ -185,13 +185,13 @@ print(n)
 
 Shuffle the sequence x in place.
 
-#### Parameters
+#### Parameters {id="shuffle-param"}
 
 | name | type   | description           |
 |------|--------|-----------------------|
 | `x`  | `list` | A non-empty sequence. |
 
-#### Examples
+#### Examples {id="shuffle-example"}
 
 **basic**
 

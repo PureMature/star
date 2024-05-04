@@ -8,13 +8,13 @@
 
 Returns an absolute representation of path. If the path is not absolute it will be joined with the current working directory to turn it into an absolute path. The absolute path name for a given file is not guaranteed to be unique.
 
-#### Parameters
+#### Parameters {id="abs-param"}
 
 | name   | type     | description                                        |
 |--------|----------|----------------------------------------------------|
 | `path` | `string` | The file path to be converted to its absolute form |
 
-#### Examples
+#### Examples {id="abs-example"}
 
 **basic**
 
@@ -31,13 +31,13 @@ print(p)
 
 Joins one or more path elements into a single path intelligently, separating them with an OS specific separator. Empty elements are ignored.
 
-#### Parameters
+#### Parameters {id="join-param"}
 
 | name       | type     | description                    |
 |------------|----------|--------------------------------|
 | `paths...` | `string` | The path elements to be joined |
 
-#### Examples
+#### Examples {id="join-example"}
 
 **basic**
 
@@ -54,13 +54,13 @@ print(p)
 
 Returns true if the path exists.
 
-#### Parameters
+#### Parameters {id="exists-param"}
 
 | name   | type     | description            |
 |--------|----------|------------------------|
 | `path` | `string` | The path to be checked |
 
-#### Examples
+#### Examples {id="exists-example"}
 
 **basic**
 
@@ -77,13 +77,13 @@ print(p)
 
 Returns true if the path exists and is a file.
 
-#### Parameters
+#### Parameters {id="is_file-param"}
 
 | name   | type     | description            |
 |--------|----------|------------------------|
 | `path` | `string` | The path to be checked |
 
-#### Examples
+#### Examples {id="is_file-example"}
 
 **basic**
 
@@ -100,13 +100,13 @@ print(p)
 
 Returns true if the path exists and is a directory.
 
-#### Parameters
+#### Parameters {id="is_dir-param"}
 
 | name   | type     | description            |
 |--------|----------|------------------------|
 | `path` | `string` | The path to be checked |
 
-#### Examples
+#### Examples {id="is_dir-example"}
 
 **basic**
 
@@ -123,13 +123,13 @@ print(p)
 
 Returns true if the path exists and is a symbolic link.
 
-#### Parameters
+#### Parameters {id="is_link-param"}
 
 | name   | type     | description            |
 |--------|----------|------------------------|
 | `path` | `string` | The path to be checked |
 
-#### Examples
+#### Examples {id="is_link-example"}
 
 **basic**
 
@@ -146,14 +146,14 @@ print(p)
 
 Returns a list of directory contents.
 
-#### Parameters
+#### Parameters {id="listdir-param"}
 
 | name        | type     | description                        |
 |-------------|----------|------------------------------------|
 | `path`      | `string` | The directory path                 |
 | `recursive` | `bool`   | If true, list contents recursively |
 
-#### Examples
+#### Examples {id="listdir-example"}
 
 **basic**
 
@@ -170,7 +170,7 @@ print(p)
 
 Returns the current working directory.
 
-#### Examples
+#### Examples {id="getcwd-example"}
 
 **basic**
 
@@ -187,13 +187,13 @@ print(p)
 
 Changes the current working directory.
 
-#### Parameters
+#### Parameters {id="chdir-param"}
 
 | name   | type     | description                           |
 |--------|----------|---------------------------------------|
 | `path` | `string` | The path to the new current directory |
 
-#### Examples
+#### Examples {id="chdir-example"}
 
 **basic**
 
@@ -209,14 +209,14 @@ chdir('/new/directory')
 
 Creates a directory with the given name. If the directory already exists, no error is thrown. It's capable of creating nested directories.
 
-#### Parameters
+#### Parameters {id="mkdir-param"}
 
 | name   | type     | description                                                                                                           |
 |--------|----------|-----------------------------------------------------------------------------------------------------------------------|
 | `path` | `string` | The directory path to be created                                                                                      |
 | `mode` | `int`    | The file mode (permissions) to use for the newly-created directory, represented as an octal number. Defaults to 0755. |
 
-#### Examples
+#### Examples {id="mkdir-example"}
 
 **default**
 
