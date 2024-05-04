@@ -1,3 +1,3 @@
-# Starlight
+# Package Starlight
 
 Start typing here... 1
