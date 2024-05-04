@@ -4,7 +4,7 @@
 
 ## Functions
 
-### `uptime()`
+### `uptime()` {id="uptime-define"}
 
 Returns the uptime of the current process in `time.duration`.
 
@@ -20,7 +20,7 @@ print(uptime())
 # Output: 883.583µs
 ```
 
-### `getenv(key, default=None)`
+### `getenv(key, default=None)` {id="getenv-define"}
 
 Returns the value of the environment variable key as a string if it exists, or default if it doesn't.
 
@@ -36,7 +36,7 @@ print(getenv("PATH"))
 # Output: /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 ```
 
-### `putenv(key, value)`
+### `putenv(key, value)` {id="putenv-define"}
 
 Sets the value of the environment variable named by the key, returning an error if any.
 
@@ -51,7 +51,7 @@ load("runtime", "putenv")
 putenv("STARLET_TEST", 123456)
 ```
 
-### `setenv(key, value)`
+### `setenv(key, value)` {id="setenv-define"}
 
 Sets the value of the environment variable named by the key, returning an error if any.
 Alias of `putenv`.
@@ -67,7 +67,7 @@ load("runtime", "setenv")
 setenv("STARLET_TEST", "ABC")
 ```
 
-### `unsetenv(key)`
+### `unsetenv(key)` {id="unsetenv-define"}
 
 Unsets a single environment variable.
 

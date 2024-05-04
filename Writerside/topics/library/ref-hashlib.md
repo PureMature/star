@@ -4,7 +4,7 @@
 
 ## Functions
 
-### `md5(data) string`
+### `md5(data) string` {id="md5-define"}
 
 Returns an MD5 hash for a string or bytes.
 
@@ -21,7 +21,7 @@ print(sum)
 # Output: fc3ff98e8c6a0d3087d515c0473f8677
 ```
 
-### `sha1(data) string`
+### `sha1(data) string` {id="sha1-define"}
 
 Returns a SHA-1 hash for a string or bytes.
 
@@ -38,7 +38,7 @@ print(sum)
 # Output: 430ce34d020724ed75a196dfc2ad67c77772d169
 ```
 
-### `sha256(data) string`
+### `sha256(data) string` {id="sha256-define"}
 
 Returns an SHA-256 hash for a string or bytes.
 
@@ -55,7 +55,7 @@ print(sum)
 # Output: 7509e5bda0c762d2bac7f90d758b5b2263fa01ccbc542ab5e3df163be08e6ca9
 ```
 
-### `sha512(data) string`
+### `sha512(data) string` {id="sha512-define"}
 
 Returns an SHA-512 hash for a string or bytes.
 

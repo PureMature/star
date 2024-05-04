@@ -4,7 +4,7 @@
 
 ## Functions
 
-### `randbytes(n)`
+### `randbytes(n)` {id="randbytes-define"}
 
 Generate a random byte string containing n number of bytes.
 
@@ -27,7 +27,7 @@ print(b)
 # Output: b'K\xaa\xbb4\xbaEh0\x19\x9c'
 ```
 
-### `randstr(chars, n)`
+### `randstr(chars, n)` {id="randstr-define"}
 
 Generate a random string containing n number of unicode characters from the given unicode string.
 
@@ -51,7 +51,7 @@ print(s)
 # Output: "enfknqfbra"
 ```
 
-### `randb32(n, sep)`
+### `randb32(n, sep)` {id="randb32-define"}
 
 Generate a random base32 string containing n number of bytes with optional separator dash for every sep characters.
 
@@ -75,7 +75,7 @@ print(s)
 # Output: 2RXQ-H45H-WV
 ```
 
-### `randint(a,b)`
+### `randint(a,b)` {id="randint-define"}
 
 Return a random integer N such that a <= N <= b.
 
@@ -99,7 +99,7 @@ print(n)
 # Output: 7
 ```
 
-### `random()`
+### `random()` {id="random-define"}
 
 Return a random floating point number in the range 0.0 <= X < 1.0.
 
@@ -116,7 +116,7 @@ print(n)
 # Output: 0.7309677873766576
 ```
 
-### `uniform(a, b)`
+### `uniform(a, b)` {id="uniform-define"}
 
 Return a random floating point number N such that a <= N <= b for a <= b and b <= N <= a for b < a.
 The end-point value b may or may not be included in the range depending on floating-point rounding in the equation a + (b-a) * random().
@@ -141,7 +141,7 @@ print(n)
 # Output: 7.309677873766576
 ```
 
-### `uuid()`
+### `uuid()` {id="uuid-define"}
 
 Generate a random UUID (RFC 4122 version 4).
 
@@ -158,7 +158,7 @@ print(u)
 # Output: 6e360b7a-f677-4f6c-9c57-8b09694d66b3
 ```
 
-### `choice(seq)`
+### `choice(seq)` {id="choice-define"}
 
 Return a random element from the non-empty sequence seq.
 
@@ -181,7 +181,7 @@ print(n)
 # Output: 3
 ```
 
-### `shuffle(x)`
+### `shuffle(x)` {id="shuffle-define"}
 
 Shuffle the sequence x in place.
 

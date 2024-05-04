@@ -4,7 +4,7 @@
 
 ## Functions
 
-### `abs(path) string`
+### `abs(path) string` {id="abs-define"}
 
 Returns an absolute representation of path. If the path is not absolute it will be joined with the current working directory to turn it into an absolute path. The absolute path name for a given file is not guaranteed to be unique.
 
@@ -27,7 +27,7 @@ print(p)
 # Output: '/current/absolute/path'
 ```
 
-### `join(path, *paths) string`
+### `join(path, *paths) string` {id="join-define"}
 
 Joins one or more path elements into a single path intelligently, separating them with an OS specific separator. Empty elements are ignored.
 
@@ -50,7 +50,7 @@ print(p)
 # Output: 'a/b/c'
 ```
 
-### `exists(path) bool`
+### `exists(path) bool` {id="exists-define"}
 
 Returns true if the path exists.
 
@@ -73,7 +73,7 @@ print(p)
 # Output: True
 ```
 
-### `is_file(path) bool`
+### `is_file(path) bool` {id="is_file-define"}
 
 Returns true if the path exists and is a file.
 
@@ -96,7 +96,7 @@ print(p)
 # Output: True
 ```
 
-### `is_dir(path) bool`
+### `is_dir(path) bool` {id="is_dir-define"}
 
 Returns true if the path exists and is a directory.
 
@@ -119,7 +119,7 @@ print(p)
 # Output: True
 ```
 
-### `is_link(path) bool`
+### `is_link(path) bool` {id="is_link-define"}
 
 Returns true if the path exists and is a symbolic link.
 
@@ -142,7 +142,7 @@ print(p)
 # Output: False
 ```
 
-### `listdir(path, recursive=False) []string`
+### `listdir(path, recursive=False) []string` {id="listdir-define"}
 
 Returns a list of directory contents.
 
@@ -166,7 +166,7 @@ print(p)
 # Output: ['file1', 'file2', ...]
 ```
 
-### `getcwd() string`
+### `getcwd() string` {id="getcwd-define"}
 
 Returns the current working directory.
 
@@ -183,7 +183,7 @@ print(p)
 # Output: '/current/directory'
 ```
 
-### `chdir(path)`
+### `chdir(path)` {id="chdir-define"}
 
 Changes the current working directory.
 
@@ -205,7 +205,7 @@ chdir('/new/directory')
 # Current directory is now '/new/directory'
 ```
 
-### `mkdir(path, mode=0o755)`
+### `mkdir(path, mode=0o755)` {id="mkdir-define"}
 
 Creates a directory with the given name. If the directory already exists, no error is thrown. It's capable of creating nested directories.
 

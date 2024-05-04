@@ -4,7 +4,7 @@
 
 ## Functions
 
-### `encode(src,encoding="standard") string`
+### `encode(src,encoding="standard") string` {id="encode-define"}
 
 return the base64 encoding of src
 
@@ -28,7 +28,7 @@ print(encoded)
 # Output: aGVsbG8gd29ybGQh
 ```
 
-### `decode(src,encoding="standard") string`
+### `decode(src,encoding="standard") string` {id="decode-define"}
 
 parse base64 input, giving back the plain string representation
 

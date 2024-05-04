@@ -4,7 +4,7 @@
 
 ## Functions
 
-### `trim_bom(rd) string`
+### `trim_bom(rd) string` {id="trim_bom-define"}
 
 Removes the Byte Order Mark (BOM) from a byte literal string or bytes.
 
@@ -27,7 +27,7 @@ print(trim_bom(s))
 # Output: hello
 ```
 
-### `count_lines(name) int`
+### `count_lines(name) int` {id="count_lines-define"}
 
 Counts the total lines in a file located at the provided path.
 
@@ -50,7 +50,7 @@ print(count_lines(name))
 # Output: 10
 ```
 
-### `head_lines(name, n) []string`
+### `head_lines(name, n) []string` {id="head_lines-define"}
 
 Returns the first 'n' lines of a file.
 
@@ -73,7 +73,7 @@ print(head_lines('path/to/file.txt', 10))
 # Output: ['line1', 'line2', ... 'line10']
 ```
 
-### `tail_lines(name, n) []string`
+### `tail_lines(name, n) []string` {id="tail_lines-define"}
 
 Returns the last 'n' lines of a file.
 
@@ -96,7 +96,7 @@ print(tail_lines('path/to/file.txt', 10))
 # Output: ['line91', 'line92', ... 'line100']
 ```
 
-### `read_bytes(name)`
+### `read_bytes(name)` {id="read_bytes-define"}
 
 Reads a file and returns its contents as bytes.
 
@@ -118,7 +118,7 @@ print(read_bytes('path/to/file.txt'))
 # Output: b'file_content'
 ```
 
-### `read_string(name)`
+### `read_string(name)` {id="read_string-define"}
 
 Reads a file and returns its contents as string.
 
@@ -140,7 +140,7 @@ print(read_string('path/to/file.txt'))
 # Output: 'file_content'
 ```
 
-### `read_lines(name)`
+### `read_lines(name)` {id="read_lines-define"}
 
 Reads a file and returns its contents as a list of lines.
 
@@ -162,7 +162,7 @@ print(read_lines('path/to/file.txt'))
 # Output: ['line1', 'line2', 'line3', ....]
 ```
 
-### `write_bytes(name, data)`
+### `write_bytes(name, data)` {id="write_bytes-define"}
 
 Writes/overwrites bytes or a byte literal string to a file. If the file isn't present, a new file would be created.
 
@@ -186,7 +186,7 @@ data = b'Hello, This is a new file.'
 write_bytes(name, data)
 ```
 
-### `write_string(name, data)`
+### `write_string(name, data)` {id="write_string-define"}
 
 Writes/overwrites a string to a file. If the file isn't present, a new file would be created.
 
@@ -208,7 +208,7 @@ load('file', 'write_string')
 write_string('new_file.txt', 'Hello, This is a new file.')
 ```
 
-### `write_lines(name, data)`
+### `write_lines(name, data)` {id="write_lines-define"}
 
 Writes/overwrites a list, tuple or set of lines to a file. If the file isn't present, a new file would be created.
 
@@ -231,7 +231,7 @@ lines = ['This is line1', 'This is line2', 'This is line3']
 write_lines('new_file.txt', lines)
 ```
 
-### `append_bytes(name, data)`
+### `append_bytes(name, data)` {id="append_bytes-define"}
 
 Appends bytes or a byte literal string to a file. If the file isn't present, a new file would be created.
 
@@ -253,7 +253,7 @@ load('file', 'append_bytes')
 append_bytes('existing_file.txt', b'Hello, This is appended data.')
 ```
 
-### `append_string(name, data)`
+### `append_string(name, data)` {id="append_string-define"}
 
 Appends a string to a file. If the file isn't present, a new file would be created.
 
@@ -275,7 +275,7 @@ load('file', 'append_string')
 append_string('existing_file.txt', 'Hello, This is appended data.')
 ```
 
-### `append_lines(name, data)`
+### `append_lines(name, data)` {id="append_lines-define"}
 
 Appends a list, tuple or set of lines to a file. If the file isn't present, a new file would be created.
 
@@ -297,7 +297,7 @@ load('file', 'append_lines')
 append_lines('existing_file.txt', ['This is line1', 'This is line2', 'This is line3'])
 ```
 
-### `stat(name, follow=False) FileStat`
+### `stat(name, follow=False) FileStat` {id="stat-define"}
 
 Returns a FileStat object representing information about the given file or directory.
 
@@ -332,7 +332,7 @@ print(info.name, info.size, info.type)
 # Output: folder 448 dir
 ```
 
-### `copyfile(src, dst, overwrite=False) string`
+### `copyfile(src, dst, overwrite=False) string` {id="copyfile-define"}
 
 Copies a file from source to destination, and returns the destination file path.
 If the destination exists and overwrite is set to False, an error is returned. If the destination is a directory, the file is copied into that directory with its original filename. Symbolic links are followed. Mode, access, and modification times are preserved.

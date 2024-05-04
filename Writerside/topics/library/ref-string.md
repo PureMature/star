@@ -4,7 +4,7 @@
 
 ## Functions
 
-### `length(obj) int`
+### `length(obj) int` {id="length-define"}
 
 Returns the length of the object; for string, it returns the number of Unicode code points, instead of bytes like `len()`.
 
@@ -37,7 +37,7 @@ print(length([1, 2, 3]), length(set([1, 2])), length({1: 2}))
 # Output: 3 2 1
 ```
 
-### `reverse(str) string`
+### `reverse(str) string` {id="reverse-define"}
 
 Returns the reversed string of the given value.
 
@@ -60,7 +60,7 @@ print(reverse(s))
 # Output: 你爱我321
 ```
 
-### `escape(str) string`
+### `escape(str) string` {id="escape-define"}
 
 Converts the characters "&", "<", ">", '"' and "'" in string to their corresponding HTML entities.
 
@@ -83,7 +83,7 @@ print(escape(s))
 # Output: Hello&lt;World&gt;
 ```
 
-### `unescape(str) string`
+### `unescape(str) string` {id="unescape-define"}
 
 Converts the HTML entities in a string back to their corresponding characters.
 
@@ -106,7 +106,7 @@ print(unescape(s))
 # Output: "You&Me"
 ```
 
-### `quote(str) string`
+### `quote(str) string` {id="quote-define"}
 
 Returns a shell-escaped version of the string str. This returns a string that can safely be used as one token in a shell command line.
 
@@ -129,7 +129,7 @@ print(quote(s))
 # Output: "Hello World"
 ```
 
-### `unquote(str) string`
+### `unquote(str) string` {id="unquote-define"}
 
 Returns a shell-unescaped version of the string str. This returns a string that was used as one token in a shell command line.
 

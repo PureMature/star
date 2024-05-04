@@ -4,7 +4,7 @@ atom provides atomic operations for integers, floats, and strings.
 
 ## Functions
 
-### `new_int(value=0) -> AtomicInt`
+### `new_int(value=0) -> AtomicInt` {id="new_int-define"}
 
 create a new AtomicInt with an optional initial value
 
@@ -40,7 +40,7 @@ print(ai.get())
 # Output: 84
 ```
 
-### `new_float(value=0.0) -> AtomicFloat`
+### `new_float(value=0.0) -> AtomicFloat` {id="new_float-define"}
 
 create a new AtomicFloat with an optional initial value
 
@@ -74,7 +74,7 @@ print(af.get())
 # Output: 3.14
 ```
 
-### `new_string(value="") -> AtomicString`
+### `new_string(value="") -> AtomicString` {id="new_string-define"}
 
 create a new AtomicString with an optional initial value
 
@@ -115,31 +115,31 @@ an atomic integer type with various atomic operations
 
 **Methods**
 
-#### `get() -> int`
+#### `get() -> int` {id="get-define"}
 
 returns the current value
 
-#### `set(value: int)`
+#### `set(value: int)` {id="set-define"}
 
 sets the value
 
-#### `cas(old: int, new: int) -> bool`
+#### `cas(old: int, new: int) -> bool` {id="cas-define"}
 
 compares and swaps the value if it matches old
 
-#### `add(delta: int) -> int`
+#### `add(delta: int) -> int` {id="add-define"}
 
 adds delta to the value and returns the new value
 
-#### `sub(delta: int) -> int`
+#### `sub(delta: int) -> int` {id="sub-define"}
 
 subtracts delta from the value and returns the new value
 
-#### `inc() -> int`
+#### `inc() -> int` {id="inc-define"}
 
 increments the value by 1 and returns the new value
 
-#### `dec() -> int`
+#### `dec() -> int` {id="dec-define"}
 
 decrements the value by 1 and returns the new value
 
@@ -149,23 +149,23 @@ an atomic float type with various atomic operations
 
 **Methods**
 
-#### `get() -> float`
+#### `get() -> float` {id="get-define"}
 
 returns the current value
 
-#### `set(value: float)`
+#### `set(value: float)` {id="set-define"}
 
 sets the value
 
-#### `cas(old: float, new: float) -> bool`
+#### `cas(old: float, new: float) -> bool` {id="cas-define"}
 
 compares and swaps the value if it matches old
 
-#### `add(delta: float) -> float`
+#### `add(delta: float) -> float` {id="add-define"}
 
 adds delta to the value and returns the new value
 
-#### `sub(delta: float) -> float`
+#### `sub(delta: float) -> float` {id="sub-define"}
 
 subtracts delta from the value and returns the new value
 
@@ -175,14 +175,14 @@ an atomic string type with various atomic operations
 
 **Methods**
 
-#### `get() -> string`
+#### `get() -> string` {id="get-define"}
 
 returns the current value
 
-#### `set(value: string)`
+#### `set(value: string)` {id="set-define"}
 
 sets the value
 
-#### `cas(old: string, new: string) -> bool`
+#### `cas(old: string, new: string) -> bool` {id="cas-define"}
 
 compares and swaps the value if it matches old

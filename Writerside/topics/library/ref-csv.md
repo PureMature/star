@@ -4,7 +4,7 @@ csv parses and writes comma-separated values files (csv).
 
 ## Functions
 
-### `read_all(source, comma=",", comment="", lazy_quotes=False, trim_leading_space=False, fields_per_record=0, skip=0, limit=0) [][]string`
+### `read_all(source, comma=",", comment="", lazy_quotes=False, trim_leading_space=False, fields_per_record=0, skip=0, limit=0) [][]string` {id="read_all-define"}
 
 read all rows from a source string, returning a list of string lists
 
@@ -55,7 +55,7 @@ print(data)
 # Output: [["dog", "spot", "4"]]
 ```
 
-### `write_all(source, comma=",") string`
+### `write_all(source, comma=",") string` {id="write_all-define"}
 
 write all rows from source to a csv-encoded string
 
@@ -85,7 +85,7 @@ print(csv_str)
 # Output: "type,name,number_of_legs\ndog,spot,4\ncat,spot,3\nspider,samantha,8\n"
 ```
 
-### `write_dict(data, header, comma=",") string`
+### `write_dict(data, header, comma=",") string` {id="write_dict-define"}
 
 write a list of dictionaries to a csv string based on the provided header
 

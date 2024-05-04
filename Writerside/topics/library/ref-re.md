@@ -4,7 +4,7 @@
 
 ## Functions
 
-### `compile(pattern) Pattern`
+### `compile(pattern) Pattern` {id="compile-define"}
 
 Compile a regular expression pattern into a regular expression object, which
 can be used for matching using its match(), search() and other methods.
@@ -15,7 +15,7 @@ can be used for matching using its match(), search() and other methods.
 |-----------|----------|-----------------------------------|
 | `pattern` | `string` | regular expression pattern string |
 
-### `search(pattern,string,flags=0)`
+### `search(pattern,string,flags=0)` {id="search-define"}
 
 Scan through string looking for the first location where the regular expression pattern
 produces a match, and return a corresponding match object. Return None if no position in
@@ -30,7 +30,7 @@ at some point in the string.
 | `string`  | `string` | input string to search                                            |
 | `flags`   | `int`    | integer flags to control regex behaviour. reserved for future use |
 
-### `findall(pattern, text, flags=0)`
+### `findall(pattern, text, flags=0)` {id="findall-define"}
 
 Returns all non-overlapping matches of pattern in string, as a list of strings.
 The string is scanned left-to-right, and matches are returned in the order found.
@@ -46,7 +46,7 @@ Empty matches are included in the result.
 | `text`    | `string` | string to find within                                             |
 | `flags`   | `int`    | integer flags to control regex behaviour. reserved for future use |
 
-### `split(pattern, text, maxsplit=0, flags=0)`
+### `split(pattern, text, maxsplit=0, flags=0)` {id="split-define"}
 
 Split text by the occurrences of pattern. If capturing parentheses are used in pattern,
 then the text of all groups in the pattern are also returned as part of the resulting list.
@@ -62,7 +62,7 @@ is returned as the final element of the list.
 | `maxsplit` | `int`    | maximum number of splits to make. default 0 splits all matches    |
 | `flags`    | `int`    | integer flags to control regex behaviour. reserved for future use |
 
-### `sub(pattern, repl, text, count=0, flags=0)`
+### `sub(pattern, repl, text, count=0, flags=0)` {id="sub-define"}
 
 Return the string obtained by replacing the leftmost non-overlapping occurrences of pattern
 in string by the replacement repl. If the pattern isn’t found, string is returned unchanged.
@@ -79,7 +79,7 @@ That is, `\n` is converted to a single newline character, `\r` is converted to a
 | `count`   | `int`    | number of replacements to make, default 0 means replace all matches |
 | `flags`   | `int`    | integer flags to control regex behaviour. reserved for future use   |
 
-### `match(pattern, string, flags=0)`
+### `match(pattern, string, flags=0)` {id="match-define"}
 
 If zero or more characters at the beginning of string match the regular expression pattern,
 return a corresponding match string tuple. Return None if the string does not match the pattern
@@ -97,10 +97,10 @@ return a corresponding match string tuple. Return None if the string does not ma
 
 **Methods**
 
-#### `match(text, flags=0)`
+#### `match(text, flags=0)` {id="match-define"}
 
-#### `findall(text, flags=0)`
+#### `findall(text, flags=0)` {id="findall-define"}
 
-#### `split(text, maxsplit=0, flags=0)`
+#### `split(text, maxsplit=0, flags=0)` {id="split-define"}
 
-#### `sub(repl, text, count=0, flags=0)`
+#### `sub(repl, text, count=0, flags=0)` {id="sub-define"}
