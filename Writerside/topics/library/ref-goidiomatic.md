@@ -4,7 +4,7 @@
 
 ## Functions
 
-### `length(obj) int` {id="length-define"}
+### `length(obj) int`
 
 Returns the length of the object, for string it returns the number of Unicode code points, instead of bytes like `len()`.
 
@@ -31,7 +31,7 @@ print(length([1, 2, 3]), length(set([1, 2])), length({1: 2}))
 # Output: 3 2 1
 ```
 
-### `sum(iterable, start=0)` {id="sum-define"}
+### `sum(iterable, start=0)`
 
 Returns the sum of `start` and the items of an iterable from left to right. The iterable's items and the `start` value are normally numbers.
 
@@ -57,7 +57,7 @@ print(sum([1, 2, 3], 10))
 # Output: 16
 ```
 
-### `distinct(iterable)` {id="distinct-define"}
+### `distinct(iterable)`
 
 Returns an iterable with distinct elements from the given iterable, i.e., without duplicates. For a list and custom types, it returns a new list with distinct elements. For a tuple, it returns a new tuple with distinct elements. For a dict, it returns the keys in a list. For a set, it just returns the original set.
 
@@ -109,7 +109,7 @@ print(distinct(set([1, 2, 3, 3])))
 # Output: {1, 2, 3}
 ```
 
-### `hex(x)` {id="hex-define"}
+### `hex(x)`
 
 Convert an integer number to a lowercase hexadecimal string prefixed with `0x`.
 
@@ -135,7 +135,7 @@ print(hex(-42))
 # Output: -0x2a
 ```
 
-### `oct(x)` {id="oct-define"}
+### `oct(x)`
 
 Convert an integer number to an octal string prefixed with `0o`.
 
@@ -161,7 +161,7 @@ print(oct(-56))
 # Output: -0o70
 ```
 
-### `bin(x)` {id="bin-define"}
+### `bin(x)`
 
 Convert an integer number to a binary string prefixed with `0b`.
 
@@ -187,7 +187,7 @@ print(bin(-10))
 # Output: -0b1010
 ```
 
-### `bytes_hex(bytes,sep="",bytes_per_sep=1)` {id="bytes_hex-define"}
+### `bytes_hex(bytes,sep="",bytes_per_sep=1)`
 
 Return a string containing two hexadecimal digits for each byte in the instance.
 If you want to make the hex string easier to read, you can specify a single character separator sep parameter to include in the output.
@@ -234,7 +234,7 @@ print(bytes_hex(b"hello", sep=":", bytes_per_sep=2))
 # Output: 68:656c:6c6f
 ```
 
-### `sleep(secs)` {id="sleep-define"}
+### `sleep(secs)`
 
 Sleeps for the given number of seconds.
 
@@ -249,7 +249,7 @@ load("go_idiomatic", "sleep")
 sleep(1)
 ```
 
-### `exit(code=0)` {id="exit-define"}
+### `exit(code=0)`
 
 Exits the program with the given exit code.
 
@@ -273,7 +273,7 @@ load("go_idiomatic", "exit")
 exit(1)
 ```
 
-### `quit(code=0)` {id="quit-define"}
+### `quit(code=0)`
 
 Alias for `exit()`.
 
@@ -297,7 +297,7 @@ load("go_idiomatic", "quit")
 quit(1)
 ```
 
-### `module(name, **kv)` {id="module-define"}
+### `module(name, **kv)`
 
 Returns the module with the given name and keyword arguments.
 The main difference between the `module` and the `struct` is that the string representation of the `module` does not enumerate its fields.
@@ -323,7 +323,7 @@ print(os)
 # Output: <module "os">
 ```
 
-### `struct(**kv)` {id="struct-define"}
+### `struct(**kv)`
 
 Returns a new struct with the given keyword arguments.
 
@@ -346,7 +346,7 @@ print(person)
 # Output: struct(age = 30, name = "Alice")
 ```
 
-### `make_struct(name, **kv)` {id="make_struct-define"}
+### `make_struct(name, **kv)`
 
 Returns a new struct with the given name as constructor and keyword arguments.
 Comparing two structs with `==` and `!=` will compare their constructors first and then their fields.
@@ -371,7 +371,7 @@ print(person)
 # Output: Person(age = 30, name = "Alice")
 ```
 
-### `shared_dict()` {id="shared_dict-define"}
+### `shared_dict()`
 
 Creates a new instance of a thread-safe, mutable shared dictionary.
 This allows for concurrent access and modification by multiple Starlark threads, ensuring data consistency and preventing race conditions.
@@ -390,7 +390,7 @@ print(sd)
 # Output: shared_dict({})
 ```
 
-### `make_shared_dict(name="", data=None)` {id="make_shared_dict-define"}
+### `make_shared_dict(name="", data=None)`
 
 Creates a customized shared dictionary with an optional name and initial data.
 The name parameter allows for more descriptive representations and debugging, while the data parameter lets you initialize the shared dictionary with pre-existing key-value pairs.
@@ -427,7 +427,7 @@ print(sd)
 # Output: custom_dict({"key1": "value1", "key2": "value2"})
 ```
 
-### `eprint(*args, sep=" ")` {id="eprint-define"}
+### `eprint(*args, sep=" ")`
 
 Works like the standard `print()` function but prints the given arguments to `stderr` instead of `Print` handler defined in Go.
 This is useful for logging errors or important warnings that should be separated from standard output.
@@ -460,7 +460,7 @@ eprint("Path", "/home/user/docs", sep=" -> ")
 # Output: Path -> /home/user/docs
 ```
 
-### `pprint(*args, sep=" ")` {id="pprint-define"}
+### `pprint(*args, sep=" ")`
 
 Works like the standard `print()` function but formats the given arguments in pretty JSON format with indentation.
 If an argument cannot be converted to JSON, it falls back to converting the value to a string.
@@ -529,7 +529,7 @@ It ensures data consistency and prevents race conditions in concurrent environme
 
 **Methods**
 
-#### `len()` {id="len-define"}
+#### `len()`
 
 Returns the number of items in the shared dictionary.
 
@@ -547,7 +547,7 @@ print(sd.len())
 # Output: 1
 ```
 
-#### `perform(fn)` {id="perform-define"}
+#### `perform(fn)`
 
 Calls the given function with the shared dictionary as its argument. The function must be callable.
 
@@ -572,7 +572,7 @@ print(sd)
 # Output: shared_dict({"new_key": "new_value"})
 ```
 
-#### `to_dict()` {id="to_dict-define"}
+#### `to_dict()`
 
 Returns a shadow-clone of the shared dictionary. Modifications to the clone do not affect the original shared dictionary.
 
@@ -593,7 +593,7 @@ print(sd_clone)
 #         {"clone_key": "clone_value"}
 ```
 
-#### `to_json()` {id="to_json-define"}
+#### `to_json()`
 
 Serializes the shared dictionary to a JSON string.
 
@@ -611,7 +611,7 @@ print(json_str)
 # Output: {"key": "value"}
 ```
 
-#### `from_json(json_str)` {id="from_json-define"}
+#### `from_json(json_str)`
 
 Deserializes a JSON string into the shared dictionary, updating it with the key-value pairs decoded from the string.
 

@@ -4,7 +4,7 @@
 
 ## Functions
 
-### `encode(x) string` {id="encode-define"}
+### `encode(x) string`
 
 The encode function accepts one required positional argument, which it converts to JSON by cases:
 - A Starlark value that implements Go's standard `json.Marshal` interface defines its own JSON encoding.
@@ -29,7 +29,7 @@ print(encode({'a': 1, 'b': 2}))
 # Output: {"a":1,"b":2}
 ```
 
-### `decode(x[, default]) string` {id="decode-define"}
+### `decode(x[, default]) string`
 
 The decode function has one required positional parameter, a JSON string. It returns the Starlark value that the string denotes.
 - Numbers are parsed as int or float, depending on whether they contain a decimal point.
@@ -49,7 +49,7 @@ print(decode('{"a":10,"b":20}'))
 # Output: {'a': 10, 'b': 20}
 ```
 
-### `indent(str, *, prefix="", indent="\t") string` {id="indent-define"}
+### `indent(str, *, prefix="", indent="\t") string`
 
 The indent function pretty-prints a valid JSON encoding, and returns a string containing the indented form.
 It accepts one required positional parameter, the JSON string, and two optional keyword-only string parameters, prefix and indent, that specify a prefix of each new line, and the unit of indentation.
@@ -70,7 +70,7 @@ print(indent('{"a":10,"b":20}', indent="  "))
 # }
 ```
 
-### `dumps(obj, indent=0) string` {id="dumps-define"}
+### `dumps(obj, indent=0) string`
 
 The dumps function converts a Starlark value to a JSON string, and returns it.
 It accepts one required positional parameter, the Starlark value, and one optional integer parameter, indent, that specifies the unit of indentation.

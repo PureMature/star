@@ -4,7 +4,7 @@
 
 ## Functions
 
-### `debug(msg, *misc, **kv)` {id="debug-define"}
+### `debug(msg, *misc, **kv)`
 
 Logs a message at the debug log level.
 
@@ -28,7 +28,7 @@ debug("Fetching data at", "21:40", retry_attempt=1)
 {"retry_attempt": 1}
 ```
 
-### `info(msg, *misc, **kv)` {id="info-define"}
+### `info(msg, *misc, **kv)`
 
 Logs a message at the info log level.
 
@@ -51,7 +51,7 @@ load("log", "info")
 info("Data fetched", response_time=42)
 ```
 
-### `warn(msg, *misc, **kv)` {id="warn-define"}
+### `warn(msg, *misc, **kv)`
 
 Logs a message at the warn log level.
 
@@ -74,7 +74,7 @@ load("log", "warn")
 warn("Fetching data took longer than expected", response_time=123)
 ```
 
-### `error(msg, *misc, **kv)` {id="error-define"}
+### `error(msg, *misc, **kv)`
 
 Logs a message at the error log level and returns an error.
 
@@ -97,7 +97,7 @@ load("log", "error")
 error("Failed to fetch data", response_time=240)
 ```
 
-### `fatal(msg, *misc, **kv)` {id="fatal-define"}
+### `fatal(msg, *misc, **kv)`
 
 Logs a message at the error log level, returns a `fail(msg)` to halt program execution.
 

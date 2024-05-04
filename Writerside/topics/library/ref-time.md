@@ -4,28 +4,28 @@
 
 ## Functions
 
-### `from_timestamp(sec, nsec) Time` {id="from_timestamp-define"}
+### `from_timestamp(sec, nsec) Time`
 
 Converts the given Unix time corresponding to the number of seconds
 and (optionally) nanoseconds since January 1, 1970 UTC into an object
 of type Time.
 
-### `is_valid_timezone(loc) boolean` {id="is_valid_timezone-define"}
+### `is_valid_timezone(loc) boolean`
 
 Reports whether loc is a valid time zone name.
 
-### `now() time` {id="now-define"}
+### `now() time`
 
 Returns the current local time
 
-### `parse_duration(d) Duration` {id="parse_duration-define"}
+### `parse_duration(d) Duration`
 
 Parses the given duration string. A duration string is a possibly signed
 sequence of decimal numbers, each with optional fraction and a unit
 suffix, such as "300ms", "-1.5h" or "2h45m". Valid time units are "ns",
 "us" (or "µs"), "ms", "s", "m", "h".
 
-### `parse_time(x, format, location) Time` {id="parse_time-define"}
+### `parse_time(x, format, location) Time`
 
 Parses the given time string using a specific time format and location.
 The expected arguments are a time string (mandatory), a time format
@@ -34,7 +34,7 @@ and a name of location (optional, set to UTC by default). For more
 details, refer to https://pkg.go.dev/time#Parse and
 https://pkg.go.dev/time#ParseInLocation.
 
-### `time(year?, month?, day?, hour?, minute?, second?, nanosecond?, location?) Time` {id="time-define"}
+### `time(year?, month?, day?, hour?, minute?, second?, nanosecond?, location?) Time`
 
 Returns the Time corresponding to yyyy-mm-dd hh:mm:ss + nsec nanoseconds
 in the appropriate zone for that time in the given location. All
@@ -78,11 +78,11 @@ methods.
 
 **Methods**
 
-#### `in_location(locstr) Time` {id="in_location-define"}
+#### `in_location(locstr) Time`
 
 get time representing the same instant but in a different location
 
-#### `format() string` {id="format-define"}
+#### `format() string`
 
 textual representation of time formatted according to the provided
 layout string: 01/02 03:04:05PM '06 -0700 (January 2, 15:04:05, 2006,
