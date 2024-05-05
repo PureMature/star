@@ -21,21 +21,21 @@
     </toc-element>
     <toc-element topic="examples.md"/>
     <toc-element topic="libraries.md">
-        <toc-element topic="ref-atom.md"/>
-        <toc-element topic="ref-base64.md"/>
-        <toc-element topic="ref-csv.md"/>
-        <toc-element topic="ref-file.md"/>
-        <toc-element topic="ref-goidiomatic.md"/>
-        <toc-element topic="ref-hashlib.md"/>
-        <toc-element topic="ref-http.md"/>
-        <toc-element topic="ref-json.md"/>
-        <toc-element topic="ref-log.md"/>
-        <toc-element topic="ref-math.md"/>
-        <toc-element topic="ref-path.md"/>
-        <toc-element topic="ref-random.md"/>
-        <toc-element topic="ref-re.md"/>
-        <toc-element topic="ref-runtime.md"/>
-        <toc-element topic="ref-string.md"/>
-        <toc-element topic="ref-time.md"/>
+        <toc-element topic="lib-atom.md"/>
+        <toc-element topic="lib-base64.md"/>
+        <toc-element topic="lib-csv.md"/>
+        <toc-element topic="lib-file.md"/>
+        <toc-element topic="lib-goidiomatic.md"/>
+        <toc-element topic="lib-hashlib.md"/>
+        <toc-element topic="lib-http.md"/>
+        <toc-element topic="lib-json.md"/>
+        <toc-element topic="lib-log.md"/>
+        <toc-element topic="lib-math.md"/>
+        <toc-element topic="lib-path.md"/>
+        <toc-element topic="lib-random.md"/>
+        <toc-element topic="lib-re.md"/>
+        <toc-element topic="lib-runtime.md"/>
+        <toc-element topic="lib-string.md"/>
+        <toc-element topic="lib-time.md"/>
     </toc-element>
 </instance-profile>

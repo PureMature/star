@@ -1,7 +1,4 @@
-# Overview
-
-Yes
-: Hello.
+# Welcome to Project Star*!
 
 This section introduces the three projects - Starlight Enhanced, Starlet, and Starbox - highlighting their objectives, motivations for development, and the unique problems each project aims to solve.
 
@@ -21,3 +18,5 @@ First Term
 
 Second Term
 : This is the definition of the second term.
+
+Here is a link to the [Starlight Enhanced](starlight.md) project.
