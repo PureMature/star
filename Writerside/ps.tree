@@ -3,7 +3,7 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
 
 <instance-profile id="ps"
-                 name="Project Star*"
+                 name="⭐ Project Star*"
                  start-page="overview.md">
 
     <toc-element topic="overview.md">
