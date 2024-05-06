@@ -41,28 +41,31 @@ Here's a diagram to illustrate the relationship and progression between the thre
 ```mermaid
 graph LR
 
-A[Starlark in Go]
-B1(Data Conversion)
-B2(Loader Cache)
-B[Starlight Enhanced]
-C1(Runtime Wrapper)
-C2(Extended Libraries)
-C[Starlet]
-D1(Simplified Config)
-D2(Module Management)
-D[Starbox]
+A((Starlark in Go))
+B1[/Data Conversion/]
+B2[/Script Caching/]
 
-B1 --> B
-B2 --> B
-A --> B
+B(((Project Starlight)))
+C1[/Runtime Wrapper/]
+C2[/Extended Libraries/]
 
-C1 --> C
-C2 --> C
-B --> C
+C(((Project Starlet)))
+D1[/Simplified Config/]
+D2[/Module Management/]
 
-D1 --> D
-D2 --> D
-C --> D
+D(((Project Starbox)))
+
+B1 ---> B
+B2 ---> B
+A ===> B
+
+C1 ---> C
+C2 ---> C
+B ===> C
+
+D1 ---> D
+D2 ---> D
+C ===> D
 ```
 
 ## Getting Started
