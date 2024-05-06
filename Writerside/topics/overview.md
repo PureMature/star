@@ -55,17 +55,17 @@ D2[/Module Management/]
 
 D(((Project Starbox)))
 
+A ===> B
 B1 ---> B
 B2 ---> B
-A ===> B
 
+B ===> C
 C1 ---> C
 C2 ---> C
-B ===> C
 
+C ===> D
 D1 ---> D
 D2 ---> D
-C ===> D
 ```
 
 ## Getting Started
