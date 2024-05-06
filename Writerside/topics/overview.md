@@ -69,3 +69,5 @@ To get started with any of the Project Star* components, check out their respect
 Whether you're looking to fine-tune data conversion between Go and Starlark, configure the scripting environment to your needs, or extend Starlark with powerful libraries, Project Star* has a solution for you.
 
 We welcome contributions and feedback on all aspects of Project Star*. Your input helps us improve and evolve these projects to better meet the needs of the Go and Starlark developer communities.
+
+![feature-star.jpg](feature-star.jpg)
