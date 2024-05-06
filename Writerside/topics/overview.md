@@ -28,7 +28,7 @@ Starbox, the final piece of Project Star*, takes Starlet to the next level. It f
 
 ## Interconnected Solutions
 
-These projects are interconnected, each building upon the foundation laid by its predecessors to provide a comprehensive solution for integrating Starlark into Go applications.
+These projects are interconnected, each building upon the foundation laid by its predecessors to provide a comprehensive solution for integrating Starlark into Go applications on various levels. Here's how they fit together:
 
 - **Starlight Enhanced** addresses the core challenge of data conversion and function calls between Go and Starlark, setting the stage for more advanced integrations.
 - **Starlet** takes the capabilities of Starlight Enhanced further by adding more libraries, enhancing data conversion options, and simplifying the script execution environment.
@@ -36,7 +36,7 @@ These projects are interconnected, each building upon the foundation laid by its
 
 Together, **Project Star\*** aims to make Starlark scripting in Go applications as seamless and powerful as possible.
 
-Here's a diagram to illustrate the relationship and progression between the three projects:
+The following diagram illustrates the relationship and progression between the three projects:
 
 ```mermaid
 graph LR
