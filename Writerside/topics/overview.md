@@ -8,11 +8,11 @@ Welcome to **Project Star\***, a sophisticated suite of projects designed to sup
 
 The three projects that make up **Project Star\*** are designed to work together seamlessly or independently, depending on your needs. Here's a brief overview of each project:
 
-| Project           | Description                                                                                                        | Key Features                                                                        |
-|-------------------|--------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
-| Starlight Enhanced | A sophisticated fork of the original Starlight project, focusing on seamless data conversion between Go and Starlark. | Seamless data conversion<br/> Script caching                                        |
-| Starlet           | Builds upon Starlight Enhanced to offer an easier-to-use Go wrapper, flexible data conversion, and additional libraries. | Flexible runtime abstraction<br/> Extended libraries <br/> Enhanced data conversion |
-| Starbox           | Further simplifies script execution setup, introduces efficient data exchange, and extends Starlark with more capabilities. | Streamlined script execution<br/> Module management<br/> Integrated HTTP context    |
+| Project            | Description                                                                                                                 | Key Features                                                                        |
+|--------------------|-----------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
+| Starlight Enhanced | A sophisticated fork of the original Starlight project, focusing on seamless data conversion between Go and Starlark.       | Seamless data conversion<br/> Script caching                                        |
+| Starlet            | Builds upon Starlight Enhanced to offer an easier-to-use Go wrapper, flexible data conversion, and additional libraries.    | Flexible runtime abstraction<br/> Extended libraries <br/> Enhanced data conversion |
+| Starbox            | Further simplifies script execution setup, introduces efficient data exchange, and extends Starlark with more capabilities. | Streamlined script execution<br/> Module management<br/> Integrated HTTP context    |
 
 ## Interconnected Solutions
 
