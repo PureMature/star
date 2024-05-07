@@ -46,55 +46,20 @@ Starlark shares numerous similarities with Python, which can be beneficial for d
 
 ## Differences from Python
 
-Starlark, while bearing a strong resemblance to Python, has several key differences.
+Starlark, while bearing a strong resemblance to Python, has several key differences, and below are the notable distinctions:
 
-Starlark, while syntactically similar to Python, introduces several key differences aimed at ensuring safety, predictability, and parallelizability in its execution environment. Below are the notable distinctions:
-
-- **Control Flow Restriction**: Unlike Python, Starlark prohibits the use of `if` statements and `for` loops at the top level of a script. Such control flow constructs are only permissible within function definitions.
-
-- **Deterministic Dictionary Iteration**: The iteration order of dictionaries in Starlark is guaranteed to be deterministic.
-
-- **Different Module Loading Mechanism**: Starlark does not use the `import` statement like Python. Instead, it employs a `load` statement to load other files. The loaded modules become immutable.
-- **Load Instead of Import**: Starlark uses a `load` statement instead of `import` to include code from other files. Loaded modules have their variables frozen and cannot be modified.
-- **Module Loading**: The `import` statement, familiar in Python for module inclusion, is replaced by `load` in Starlark. The `load` statement specifically targets loading named symbols from other Starlark files, and the loaded modules are immutable.
-
-- **Error Handling Simplification**: Starlark eschews Python's `try`/`except`/`finally` error handling mechanisms in favor of a `fail()` function that directly reports errors.
-- **No Error Handling Mechanisms**: Starlark does not provide constructs like `try`...`except`...`finally` for error handling. Instead, it provides a `fail()` function to report errors.
-- **No Exception Handling Mechanism**: Starlark lacks Python's `try`/`except`/`finally` mechanism for error handling. Errors are reported through a `fail` function.
-
-- **Immutable Global Variables**: Global variables in Starlark are immutable after their initial definition. This constraint is designed to prevent side-effects that could complicate thread-safe execution and deterministic builds.
-- **Immutable Global Variables**: Once a global variable is defined in Starlark, it cannot be modified, promoting thread safety and deterministic execution.
 - **Immutable Global Variables**: Once defined, global variables in Starlark cannot be modified, promoting thread-safety and predictable behavior.
-
-- **Lack of Object-oriented Features**: Starlark does not support classes and objects, diverging from Python's object-oriented programming capabilities.
-- **No Classes or Objects**: Starlark does not support object-oriented programming features like classes and objects.
+- **Control Flow Restriction**: Unlike Python, Starlark prohibits the use of `if` statements and `for` loops at the top level of a script. Such control flow constructs are only permissible within function definitions.
+- **Limited Recursion and Loops**: By default, Starlark does not support recursion or infinite or unbounded loops (e.g., `while` loops). Recursion can be enabled with a specific interpreter flag (`-recursion`), but this is not standard behavior.
+- **Thread-Safe Execution**: Starlark is designed for thread-safe execution, allowing its functions to run in parallel without data races. This is achieved through a freezing mechanism that makes loaded modules and their variables immutable, preventing shared mutable state among threads.
+- **Load Instead of Import**: Starlark uses a `load` statement instead of `import` to include code from other files. Loaded modules have their variables frozen and cannot be modified.
+- **Error Handling Simplification**: Starlark eschews Python's `try`/`except`/`finally` error handling mechanisms in favor of a `fail()` function that directly reports errors.
 - **No Classes or Objects**: Starlark does not support object-oriented programming features such as classes and objects.
-
-- **Limited Built-in Libraries**: Starlark's built-in functions and libraries vary from Python's, with many system-level libraries, such as file operations, unavailable and requiring external implementation.
-- **Limited Standard Library**: Starlark's standard library is more limited compared to Python's, as it is designed to be embedded in applications with restricted capabilities.
-- **Limited Standard Library**: Starlark's standard library is more restrained compared to Python's, particularly in areas involving system interaction or I/O operations.
 - **Standard Library Differences**: The standard library in Starlark is much more limited compared to Python's. It omits features that require system-level access like file I/O operations, reflecting Starlark's design for embedding in larger applications without granting access to the underlying system.
-
-
-- **Limited Recursion and Loops**: By default, recursion and infinite loops are unsupported in Starlark, but can be enabled using the `-recursion` flag.
-- **Limited Recursion and Loops**: By default, Starlark does not support recursion or unbounded loops (e.g., `while` loops). These can be enabled by using specific flags during interpretation.
-- **Recursion and Loop Limitations**: Starlark, by default, disallows recursion and infinite loops. Recursion can be enabled with a specific interpreter flag (`-recursion`), but this is not standard behavior.
-
-
+- **Restrictions on Operations between Types**: Operations between `bool` and `int` types are not allowed in Starlark, making expressions like `True < 2` and `True + True` invalid.
+- **Deterministic Dictionary Iteration**: The iteration order of dictionaries in Starlark is guaranteed to be deterministic.
 - **Limited String Iteration**: Starlark does not support iteration over strings character by character.
-
-
-- **No Top-Level Control Flow Statements**: In Starlark, `if` statements and `for` loops are not allowed at the top level of a file. They must be contained within functions.
-- **No Top-Level Control Flow**: Starlark disallows `if` statements and `for` loops at the top level of a file, requiring them to be used within functions instead.
-
-- **Restrictions on Operations between Boolean and Integer Types**: Operations between `bool` and `int` types are not allowed in Starlark, making expressions like `True < 2` and `True + True` invalid.
-
 - **Singleton Tuples**: Single-element tuples in Starlark must have trailing commas, for example, `x = (1,)`.
-
-- **Thread Safety and Parallel Execution**: Designed with concurrency in mind, Starlark ensures thread safety through immutable shared data and supports parallel evaluation of modules.
-- **Thread-Safe Execution**: Starlark is designed for thread-safe execution, allowing its functions to run in parallel without data races due to its immutability guarantees.
-- **Thread-Safety**: Independent Starlark threads can execute in parallel without data races due to the immutability of shared data.
-
 
 These distinctions make Starlark well-suited for environments where safety, determinism, and parallel execution are critical, such as build systems and configuration languages.
 
