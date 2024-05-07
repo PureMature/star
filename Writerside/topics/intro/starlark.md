@@ -28,6 +28,8 @@ Starlark is a versatile and powerful language with several key features:
 - **High-level Data Types & First-class Functions**: Starlark supports high-level data types such as lists, dictionaries, and sets, and treats functions as first-class citizens. This allows functions to be passed as arguments, returned from other functions, and stored in data structures, providing flexibility in programming.
 - **Garbage Collection**: With automatic garbage collection, Starlark simplifies memory management by automatically reclaiming memory allocated to objects that are no longer in use.
 
+These features collectively make Starlark a powerful, secure, and adaptable language for configuration and scripting within larger systems.
+
 ## Similarities to Python
 
 Starlark shares numerous similarities with Python, which can be beneficial for developers familiar with Python:
@@ -36,6 +38,8 @@ Starlark shares numerous similarities with Python, which can be beneficial for d
 - **Data Types**: Both languages support a variety of high-level data types. This includes primitive types like numbers and strings, as well as complex types like lists, tuples, and dictionaries. This commonality in data types allows for a smooth mapping of knowledge from Python to Starlark.
 - **Control Flow**: Control flow structures such as `if`, `for`, and `while` loops are present in both languages. Starlark's control flow syntax and semantics are modeled after Python, though Starlark may impose some restrictions to fit its specific use cases.
 - **Function Calls and Parameter Passing**: Function calling conventions in Starlark mirror those in Python, employing call-by-value parameter passing. This means that for immutable data types (e.g., `None`, `bool`, `int`, `float`, `str`), a copy of the value is passed, while for mutable types (e.g., `list`, `dict`), the reference is passed, allowing for modifications that reflect across all references to the object.
+
+These resemblances contribute to making Starlark's learning curve more manageable for those proficient in Python.
 
 ## Differences from Python
 
@@ -54,4 +58,20 @@ Starlark, while bearing a strong resemblance to Python, has several key differen
 - **Limited String Iteration**: Starlark does not support iteration over strings character by character.
 - **Singleton Tuples**: Single-element tuples in Starlark must have trailing commas, for example, `x = (1,)`.
 
+These distinctions make Starlark well-suited for environments where safety, determinism, and parallel execution are critical, such as build systems and configuration languages.
+
 ## Further Reading and Resources
+
+For those interested in diving deeper into Starlark, here's a curated list of resources that should provide comprehensive insights and guidance:
+
+- Official Documentation and Specifications
+  - The **[Starlark Language Specification](https://github.com/bazelbuild/starlark/blob/master/spec.md)** offers a complete overview of the language's syntax, semantics, and features, making it an essential read for anyone looking to understand the core aspects of Starlark.
+  - **[Starlark in Go Documentation](https://pkg.go.dev/go.starlark.net/starlark)** provides details on the Go implementation of Starlark, including its API and how to integrate Starlark into Go projects. This is particularly useful for developers working with Go.
+- Design Principles and Discussions
+  - **[Starlark Design Rationale](https://github.com/bazelbuild/starlark/blob/master/design.md)** delves into the decisions behind the language's design, offering insights into its simplicity, safety, and why certain features were included or omitted.
+- Community and Development
+  - For ongoing discussions, updates, and community support, the **[Starlark Mailing List](https://groups.google.com/g/starlark-go)** is a great place to ask questions, share experiences, and stay informed about developments in the Starlark ecosystem.
+  - The **[Starlark Official Repository](https://github.com/bazelbuild/starlark)** and **[Starlark in Go project](https://github.com/google/starlark-go)** host the source code and are good resources for those interested in contributing to the project or understanding its internals.
+- Usage and Applications
+  - For a look at how Starlark is used in real-world projects and tools, **[Starlark Users and Tools](https://github.com/bazelbuild/starlark/blob/master/users.md)** provides a list of implementations and applications, showcasing the language's versatility.
+  - **[Bazel's Use of Starlark](https://bazel.build/rules/language)** illustrates how Starlark is employed within Bazel, a powerful tool for building and testing software, further highlighting its utility in complex project configurations.
