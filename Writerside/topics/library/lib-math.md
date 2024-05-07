@@ -2,6 +2,11 @@
 
 `math` defines a Starlark module of mathematical functions. All functions accept both int and float values as arguments. It's a official module provided in *Starlark in Go* repository.
 
+## Constants
+
+- `e`: The base of natural logarithms, approximately 2.71828.
+- `pi`: The ratio of a circle's circumference to its diameter, approximately 3.14159.
+
 ## Functions
 
 ### `acos(x)`

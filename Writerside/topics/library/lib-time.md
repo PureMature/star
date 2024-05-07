@@ -2,6 +2,15 @@
 
 `time` is a Starlark module of time-related functions and constants. It's a official module provided in *Starlark in Go* repository.
 
+## Constants
+
+- `nanosecond`: A duration representing one nanosecond.
+- `microsecond`: A duration representing one microsecond.
+- `millisecond`: A duration representing one millisecond.
+- `second`: A duration representing one second.
+- `minute`: A duration representing one minute.
+- `hour`: duration representing one hour.
+
 ## Functions
 
 ### `from_timestamp(sec, nsec) Time`
