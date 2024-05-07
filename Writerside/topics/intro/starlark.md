@@ -4,13 +4,6 @@
 
 Starlark, previously known as Skylark, is a dialect of Python developed by Google for configuration tasks. Originating in the [Bazel build system](https://bazel.build/), it's now used across various projects. With its Python-like syntax, dynamic typing, and high-level data types, it offers an easy transition for Python developers. However, it stands out with its focus on simplicity, parallel execution, and determinism, making it ideal for embedding in larger applications. This language brings together the familiarity of Python and unique features tailored for configuration and scripting tasks.
 
-## Highlights
-
-- **Pythonic Syntax**: Offers an easy learning path for Python developers.
-- **Simplicity**: Focuses on readability and maintainability.
-- **Determinism**: Ensures reproducible builds and configurations.
-- **Versatility**: While tailored for Bazel, it's adaptable to other projects.
-
 ## The Design Principles
 
 Starlark operates on several key design principles that shape its utility and performance as an embedded configuration language:
@@ -60,7 +53,5 @@ Starlark, while bearing a strong resemblance to Python, has several key differen
 - **Deterministic Dictionary Iteration**: The iteration order of dictionaries in Starlark is guaranteed to be deterministic.
 - **Limited String Iteration**: Starlark does not support iteration over strings character by character.
 - **Singleton Tuples**: Single-element tuples in Starlark must have trailing commas, for example, `x = (1,)`.
-
-These distinctions make Starlark well-suited for environments where safety, determinism, and parallel execution are critical, such as build systems and configuration languages.
 
 ## Further Reading and Resources
