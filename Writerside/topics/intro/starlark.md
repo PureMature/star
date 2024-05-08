@@ -60,14 +60,13 @@ Starlark, while bearing a strong resemblance to Python, has several key differen
 
 These distinctions make Starlark well-suited for environments where safety, determinism, and parallel execution are critical, such as build systems and configuration languages.
 
-## Further Reading and Resources
+## Further Reading
 
 For those interested in diving deeper into Starlark, here's a curated list of resources that should provide comprehensive insights and guidance:
 
 - Official Documentation and Specifications
   - The **[Starlark Language Specification](https://github.com/bazelbuild/starlark/blob/master/spec.md)** offers a complete overview of the language's syntax, semantics, and features, making it an essential read for anyone looking to understand the core aspects of Starlark.
   - **[Starlark in Go Documentation](https://pkg.go.dev/go.starlark.net/starlark)** provides details on the Go implementation of Starlark, including its API and how to integrate Starlark into Go projects. This is particularly useful for developers working with Go.
-- Design Principles and Discussions
   - **[Starlark Design Rationale](https://github.com/bazelbuild/starlark/blob/master/design.md)** delves into the decisions behind the language's design, offering insights into its simplicity, safety, and why certain features were included or omitted.
 - Community and Development
   - For ongoing discussions, updates, and community support, the **[Starlark Mailing List](https://groups.google.com/g/starlark-go)** is a great place to ask questions, share experiences, and stay informed about developments in the Starlark ecosystem.
