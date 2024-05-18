@@ -1,0 +1,46 @@
+name: Generate Outline Docs
+
+on:
+  push:
+    branches: ["master"]
+    paths:
+      - 'Outline/**'
+
+defaults:
+  run:
+    shell: bash
+
+permissions: read-all
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: 1.18.10
+          cache: true
+
+      - name: Install Tools
+        run: |
+          go install github.com/Kunde21/markdownfmt/v3/cmd/markdownfmt@latest
+          go install -v github.com/1set/starlet/cmd/starlet@latest
+          curl -sSL https://github.com/goaloha/outline/releases/download/a1/outline.linux -o outline
+          install -m 0755 outline /usr/local/bin
+
+      - name: Build Docs
+        run: |
+          cd Outline
+          ./build.sh
+
+      - name: Save artifact with build results
+        uses: actions/upload-artifact@v4
+        with:
+          name: docs
+          path: |
+            Outline/markdown
+          retention-days: 7

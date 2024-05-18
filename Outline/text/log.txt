@@ -1,0 +1,89 @@
+outline: log
+    `log` provides functionality for logging messages at various severity levels.
+
+    path: log
+
+    constants:
+
+    functions:
+
+      debug(msg, *misc, **kv)
+          Logs a message at the debug log level.
+          params:
+            msg string
+              The message to log.
+            misc *args
+              Additional message arguments will be concatenated to the message string separated by a space.
+            kv **kwargs
+              Key-value pairs to provide additional debug information.
+          examples:
+            basic
+              Log a debug message with additional information.
+              code:
+                load("log", "debug")
+                debug("Fetching data at", "21:40", retry_attempt=1)
+                # Output: 2024-02-29T21:39:09.732+0800	DEBUG	log/zaplog.go:124	Fetching data at 21:40	{"retry_attempt": 1}
+
+      info(msg, *misc, **kv)
+          Logs a message at the info log level.
+          params:
+            msg string
+              The message to log.
+            misc *args
+              Additional message arguments will be concatenated to the message string separated by a space.
+            kv **kwargs
+              Key-value pairs to provide additional information.
+          examples:
+            basic
+              Log an info message with additional information.
+              code:
+                load("log", "info")
+                info("Data fetched", response_time=42)
+
+      warn(msg, *misc, **kv)
+          Logs a message at the warn log level.
+          params:
+            msg string
+              The message to log.
+            misc *args
+              Additional message arguments will be concatenated to the message string separated by a space.            
+            kv **kwargs
+              Key-value pairs to provide additional warning information.
+          examples:
+            basic
+              Log a warning message with additional information.
+              code:
+                load("log", "warn")
+                warn("Fetching data took longer than expected", response_time=123)
+
+      error(msg, *misc, **kv)
+          Logs a message at the error log level and returns an error.
+          params:
+            msg string
+              The message to log.
+            misc *args
+              Additional message arguments will be concatenated to the message string separated by a space.            
+            kv **kwargs
+              Key-value pairs to provide additional error information.
+          examples:
+            basic
+              Log an error message with additional information.
+              code:
+                load("log", "error")
+                error("Failed to fetch data", response_time=240)
+
+      fatal(msg, *misc, **kv)
+          Logs a message at the error log level, returns a `fail(msg)` to halt program execution.
+          params:
+            msg string
+              The message to log.
+            misc *args
+              Additional message arguments will be concatenated to the message string separated by a space.
+            kv **kwargs
+              Key-value pairs to provide additional fatal error information.
+          examples:
+            basic
+              Log a fatal error message with additional information.
+              code:
+                load("log", "fatal")
+                fatal("Failed to fetch data and cannot recover", retry_attempts=3, response_time=360)

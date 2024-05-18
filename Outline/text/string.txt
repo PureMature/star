@@ -1,0 +1,102 @@
+outline: string
+    `string` provides constants and functions to manipulate strings, it's intended to be a drop-in subset of Python's string module for Starlark.
+
+    path: string
+
+    constants:
+
+      ascii_lowercase: A string containing all the characters that are considered lowercase letters.
+      ascii_uppercase: A string containing all the characters that are considered uppercase letters.
+      ascii_letters: A string containing all the characters that are considered letters.
+      digits: A string containing all characters considered decimal digits: `0123456789`.
+      hexdigits: A string containing all characters considered hexadecimal digits: `0123456789abcdefABCDEF`.
+      octdigits: A string containing all characters considered octal digits: `01234567`.
+      punctuation: A string containing all characters which are considered punctuation characters.
+      whitespace: A string containing all characters that are considered whitespace.
+      printable: A string containing all characters that are considered printable. This is a combination of digits, ascii_letters, punctuation, and whitespace
+
+    functions:
+      length(obj) int
+          Returns the length of the object; for string, it returns the number of Unicode code points, instead of bytes like `len()`.
+          params:
+            obj string
+              The object whose length is to be calculated
+          examples:
+            String
+              Calculate the length of a CJK string.
+              code:
+                  load("string", "length")
+                  s = "你好"
+                  print(length(s), len(s))
+                  # Output: 2 6
+            Misc
+              Calculate the length of a list, set and map.
+              code:
+                  load("string", "length")
+                  print(length([1, 2, 3]), length(set([1, 2])), length({1: 2}))
+                  # Output: 3 2 1
+      reverse(str) string
+          Returns the reversed string of the given value.
+          params:
+            str string
+              A string that is to be reversed
+          examples:
+            Basic
+              Reverse a string.
+              code:
+                  load("string", "reverse")
+                  s = "123我爱你"
+                  print(reverse(s))
+                  # Output: 你爱我321
+      escape(str) string
+          Converts the characters "&", "<", ">", '"' and "'" in string to their corresponding HTML entities.
+          params:
+            str string
+              A string which is to be HTML escaped
+          examples:
+            Basic
+              Escape a string.
+              code:
+                  load("string", "escape")
+                  s = "Hello<World>"
+                  print(escape(s))
+                  # Output: Hello&lt;World&gt;
+      unescape(str) string
+          Converts the HTML entities in a string back to their corresponding characters.
+          params:
+            str string
+              A HTML escaped string
+          examples:
+            Basic
+              Unescape a string.
+              code:
+                  load("string", "unescape")
+                  s = "You&amp;Me"
+                  print(unescape(s))
+                  # Output: "You&Me"
+      quote(str) string
+          Returns a shell-escaped version of the string str. This returns a string that can safely be used as one token in a shell command line.
+          params:
+            str string
+              A string which is to be quoted
+          examples:
+            Basic
+              Quote a string.
+              code:
+                  load("string", "quote")
+                  s = "Hello World"
+                  print(quote(s))
+                  # Output: "Hello World"
+      unquote(str) string
+          Returns a shell-unescaped version of the string str. This returns a string that was used as one token in a shell command line.
+          params:
+            str string
+              A string which is to be unquoted
+          examples:
+            Basic
+              Unquote a string.
+              code:
+                  load("string", "unquote")
+                  s = '"Hello\tWorld"'
+                  print(unquote(s))
+                  # Output: Hello	World
