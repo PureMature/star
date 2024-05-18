@@ -17,3 +17,6 @@ for i in text/*.txt; do
     outline template --template doc_template.txt "$i" > "$mdfile"
     markdownfmt -soft-wraps -w "$mdfile"
 done
+
+# adjust markdown files for the docsite
+starlet -g -r fix_docsite.star
