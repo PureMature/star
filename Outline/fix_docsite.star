@@ -33,3 +33,5 @@ def handle_file(in_file):
 
 for in_file in in_files:
     handle_file(in_file)
+
+print("Done!")
