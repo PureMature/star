@@ -20,3 +20,5 @@ done
 
 # adjust markdown files for the docsite
 starlet -g -r fix_docsite.star
+
+echo "🎉 Done!"

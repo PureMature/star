@@ -48,7 +48,7 @@ jobs:
       - name: Save Lib Docs as Artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: md-docs
+          name: lib-docs
           path: |
             Writerside/topics/library
           retention-days: 7
