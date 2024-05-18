@@ -3,6 +3,8 @@ name: Build Docs
 on:
   push:
     branches: ["master"]
+    paths:
+      - 'Writerside/**'
   workflow_dispatch:
 
 permissions:

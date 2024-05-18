@@ -37,10 +37,18 @@ jobs:
           cd Outline
           ./build.sh
 
-      - name: Save Artifacts
+      - name: Save Docs as Artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: docs
+          name: md-docs
           path: |
             Outline/markdown
+          retention-days: 7
+
+      - name: Save Lib Docs as Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: md-docs
+          path: |
+            Writerside/topics/library
           retention-days: 7
