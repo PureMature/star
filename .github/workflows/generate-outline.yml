@@ -13,7 +13,7 @@ defaults:
 permissions: read-all
 
 jobs:
-  build:
+  generate:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
